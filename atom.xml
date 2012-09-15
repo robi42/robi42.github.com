@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blawg]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-09-16T00:07:33+02:00</updated>
+  <updated>2012-09-16T00:17:21+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello, World!]]></title>
+    <link href="http://robi42.github.com/blog/2012/09/16/hello/"/>
+    <updated>2012-09-16T00:12:00+02:00</updated>
+    <id>http://robi42.github.com/blog/2012/09/16/hello</id>
+    <content type="html"><![CDATA[<p><img src="http://geekandpoke.typepad.com/.a/6a00d8341d3df553ef0128775126cc970c-pi"></p>
+]]></content>
+  </entry>
   
 </feed>
