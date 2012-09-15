@@ -138,6 +138,41 @@
 
 
   
+
+  <section>
+    <h1>Tweets</h1>
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+        new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 5,
+            interval: 6000,
+            width: 'auto',
+            height: 250,
+            theme: {
+                shell: {
+                    background: '#ddd',
+                    color: '#000'
+                },
+                tweets: {
+                    background: '#eee',
+                    color: '#000',
+                    links: '#0000ff'
+                }
+            },
+            features: {
+                scrollbar: true,
+                loop: false,
+                live: true,
+                hashtags: true,
+                timestamp: true,
+                avatars: false,
+                behavior: 'all'
+            }
+        }).render().setUser('robi42').start();
+    </script>
+  </section>
 </aside>
 
     </div>
