@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Tinker"
+date: 2012-09-16 12:40
+published: false
+comments: true
+categories:
+---
+
+``` C# Some Code
+using System;
+
+using MonoTouch.CoreLocation;
+using MonoTouch.MapKit;
+
+namespace Chapter6.MonoTouchApp
+{
+    public class MapAnnotation : MKAnnotation
+    {
+        readonly string        title;
+        CLLocationCoordinate2D coordinate;
+
+        public MapAnnotation(string title, CLLocationCoordinate2D coordinate)
+        {
+            this.title      = title;
+            this.coordinate = coordinate;
+        }
+
+        public override CLLocationCoordinate2D Coordinate
+        {
+            get { return this.coordinate; }
+            set { this.coordinate = value; }
+        }
+
+        public override string Title
+        {
+            get { return this.title; }
+        }
+    }
+}
+```
