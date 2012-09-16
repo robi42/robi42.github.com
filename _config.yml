@@ -7,7 +7,7 @@ title: Robi's Blawg
 subtitle: On Life, the Universe and Everything.
 author: Robert Thurnher
 simple_search: http://google.com/search
-description:
+description: 42
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -93,7 +93,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-246880-3
 
 # Facebook Like
 facebook_like: false
