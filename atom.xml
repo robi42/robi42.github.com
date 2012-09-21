@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-09-22T00:23:25+02:00</updated>
+  <updated>2012-09-22T00:30:24+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -22,7 +22,7 @@
 contemporary web app using <a href="http://www.playframework.org/">Play 2</a> framework.</p>
 
 <p>Contains lots of current web dev best practices and niceties, from latest
-Twitter Bootstrap and Backbone.js to CoffeeScript with CommonJS modules support
+Twitter Bootstrap (LESS) and Backbone.js to CoffeeScript with CommonJS modules support
 and proper JS bundling.</p>
 
 <p>Here&#8217;s a couple of code snippets to whet one&#8217;s appetite:</p>
