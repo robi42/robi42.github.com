@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-09-22T17:54:09+02:00</updated>
+  <updated>2012-09-22T17:59:04+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>A little project aimed at getting one up and running quickly with building a
 contemporary web app using <a href="http://www.playframework.org/">Play 2</a> framework.</p>
 
-<p>Contains a bunch of current web dev best practices and niceties, from latest
+<p>Contains a bunch of current web dev <strong>best practices</strong> and niceties, from latest
 Twitter Bootstrap (LESS) &amp; Backbone.js to CoffeeScript with CommonJS modules
 support &amp; proper JS bundling.</p>
 
