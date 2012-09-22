@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-09-22T01:17:55+02:00</updated>
+  <updated>2012-09-22T17:54:09+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -18,7 +18,7 @@
     <link href="http://robi42.github.com/blog/2012/09/21/play-2-boilerplate/"/>
     <updated>2012-09-21T23:43:00+02:00</updated>
     <id>http://robi42.github.com/blog/2012/09/21/play-2-boilerplate</id>
-    <content type="html"><![CDATA[<p>A little project getting one up and running quickly with building a
+    <content type="html"><![CDATA[<p>A little project aimed at getting one up and running quickly with building a
 contemporary web app using <a href="http://www.playframework.org/">Play 2</a> framework.</p>
 
 <p>Contains a bunch of current web dev best practices and niceties, from latest
