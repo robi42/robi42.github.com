@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-09-25T00:31:53+02:00</updated>
+  <updated>2012-09-25T00:35:36+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -76,7 +76,6 @@
 <span class='line-number'>25</span>
 <span class='line-number'>26</span>
 <span class='line-number'>27</span>
-<span class='line-number'>28</span>
 </pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">TwitterApiClient</span>
 </span><span class='line'><span class="p">{</span>
 </span><span class='line'>    <span class="k">const</span> <span class="kt">string</span> <span class="n">BaseUrl</span> <span class="p">=</span> <span class="s">&quot;https://api.twitter.com/1/statuses/&quot;</span><span class="p">;</span>
@@ -84,6 +83,8 @@
 </span><span class='line'>    <span class="k">public</span> <span class="k">void</span> <span class="nf">DoWithTweetsForUser</span><span class="p">(</span><span class="kt">string</span> <span class="n">username</span><span class="p">,</span> <span class="n">Action</span><span class="p">&lt;</span><span class="n">IList</span><span class="p">&lt;</span><span class="n">Tweet</span><span class="p">&gt;&gt;</span> <span class="n">callback</span><span class="p">)</span>
 </span><span class='line'>    <span class="p">{</span>
 </span><span class='line'>        <span class="kt">var</span> <span class="n">webClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">WebClient</span><span class="p">();</span>
+</span><span class='line'>        <span class="kt">var</span> <span class="n">url</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&quot;{0}user_timeline.json?screen_name={1}&quot;</span><span class="p">,</span>
+</span><span class='line'>                                <span class="n">BaseUrl</span><span class="p">,</span> <span class="n">Uri</span><span class="p">.</span><span class="n">EscapeUriString</span><span class="p">(</span><span class="n">username</span><span class="p">));</span>
 </span><span class='line'>
 </span><span class='line'>        <span class="n">webClient</span><span class="p">.</span><span class="n">DownloadStringCompleted</span> <span class="p">+=</span> <span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
 </span><span class='line'>            <span class="kt">var</span> <span class="n">tweets</span> <span class="p">=</span> <span class="p">(</span><span class="k">from</span> <span class="n">element</span> <span class="k">in</span> <span class="n">JsonValue</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">Result</span><span class="p">)</span> <span class="k">as</span> <span class="n">JsonArray</span>
@@ -98,9 +99,6 @@
 </span><span class='line'>
 </span><span class='line'>            <span class="n">callback</span><span class="p">(</span><span class="n">tweets</span><span class="p">);</span>
 </span><span class='line'>        <span class="p">};</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="kt">var</span> <span class="n">url</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&quot;{0}user_timeline.json?screen_name={1}&quot;</span><span class="p">,</span>
-</span><span class='line'>                                <span class="n">BaseUrl</span><span class="p">,</span> <span class="n">Uri</span><span class="p">.</span><span class="n">EscapeUriString</span><span class="p">(</span><span class="n">username</span><span class="p">));</span>
 </span><span class='line'>
 </span><span class='line'>        <span class="n">webClient</span><span class="p">.</span><span class="n">DownloadStringAsync</span><span class="p">(</span><span class="k">new</span> <span class="n">Uri</span><span class="p">(</span><span class="n">url</span><span class="p">));</span>
 </span><span class='line'>    <span class="p">}</span>
