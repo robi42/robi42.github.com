@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Code | Robi's Blog]]></title>
-  <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Mobile | Robi's Blog]]></title>
+  <link href="http://robi42.github.com/blog/categories/mobile/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
   <updated>2012-09-24T22:08:11+02:00</updated>
   <id>http://robi42.github.com/</id>
@@ -140,62 +140,6 @@
 <p>And with .NET 4.5's new <a href="http://blogs.msdn.com/b/dotnet/archive/2012/04/03/async-in-4-5-worth-the-await.aspx">async features</a> landing in Monoland soon, related code will get even more convenient to write and handle.</p>
 
 <p>Pretty neat, IMHO. What do you think?</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Play 2 Boilerplate]]></title>
-    <link href="http://robi42.github.com/blog/2012/09/21/play-2-boilerplate/"/>
-    <updated>2012-09-21T23:43:00+02:00</updated>
-    <id>http://robi42.github.com/blog/2012/09/21/play-2-boilerplate</id>
-    <content type="html"><![CDATA[<p>A little project aimed at getting one up and running quickly with building a
-contemporary web app using <a href="http://www.playframework.org/">Play 2</a> framework.</p>
-
-<p>Contains a bunch of current web dev <strong>best practices</strong> and niceties, from latest
-Twitter Bootstrap (LESS) &amp; Backbone.js to CoffeeScript with CommonJS modules
-support &amp; proper JS bundling.</p>
-
-<p>Here're a couple of exemplary code snippets to whet one's appetite:</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>main.coffee  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="p">{</span><span class="nx">log</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">&#39;./utilities&#39;</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span> <span class="o">-&gt;</span>
-</span><span class='line'>  <span class="nb">window</span><span class="p">.</span><span class="nv">app = </span><span class="p">{}</span>
-</span><span class='line'>  <span class="nx">log</span> <span class="s">&#39;Hello, world!&#39;</span>
-</span><span class='line'>  <span class="k">return</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Application.scala  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">object</span> <span class="nc">Application</span> <span class="k">extends</span> <span class="nc">Controller</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="k">def</span> <span class="n">index</span> <span class="k">=</span> <span class="nc">Action</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="nc">Ok</span><span class="o">(</span><span class="n">views</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">index</span><span class="o">(</span><span class="nc">Messages</span><span class="o">(</span><span class="s">&quot;app.name&quot;</span><span class="o">)))</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p><a href="https://github.com/robi42/play2-boilerplate">Get it on GitHub</a> while it's hot.</p>
 ]]></content>
   </entry>
   

@@ -9,8 +9,7 @@
   <meta name="author" content="Robert Thurnher">
 
   
-  <meta name="description" content="A little project aimed at getting one up and running quickly with building a
-contemporary web app using Play 2 framework. Contains a bunch of current &hellip;">
+  <meta name="description" content="Often, when developing a mobile app one wants to target iOS as well as Android (+ maybe MS OS). Now, this basically means developing the app from &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +76,152 @@ contemporary web app using Play 2 framework. Contains a bunch of current &hellip
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/09/24/xamarin-ftw/">Xamarin FTW?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-24T20:02:00+02:00"  data-updated="true">Sep 24<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Often, when developing a mobile app one wants to target iOS as well as Android (+ maybe MS OS).</p>
+
+<p>Now, this basically means developing the app from scratch and consequently maintaining it at least twice on different platforms, written in different languages (Objective-C and Java, that is), using different sets of tools etc.</p>
+
+<p>Cumbersome and potentially error-prone. Well, there&#8217;s a viable alternative:</p>
+
+<p>With <a href="http://xamarin.com/">Xamarin</a> one can write mobile apps targetting iOS and Android in C# using .NET (and native) libraries, sharing code (business logic, data &amp; web services layers, utilites, &#8230;) while creating fully native UIs built on each platform&#8217;s own SDKs, providing access to all respective device capabilities.</p>
+
+<p>In addition to that, there&#8217;s for example <a href="http://blog.xamarin.com/2012/02/10/easily-create-ios-user-interfaces-with-monotouch-dialog/">MonoTouch.Dialog</a> making it easier and more fun to create table-based iOS UIs. Plus, there&#8217;s <a href="http://xamarin.com/mobileapi">Xamarin.Mobile</a> aimed at exposing a unified API for accessing common device features. Interesting stuff when used sensibly.</p>
+
+<p>Here&#8217;s some demo code (which is loosely based on samples from the very recommendable book <a href="http://shop.oreilly.com/product/0636920024002.do">&#8220;Mobile Development with C#&#8221;</a>) showing how mentioned shared layers could benefit from this:</p>
+
+<figure class='code'><figcaption><span>Simple model  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Tweet</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="k">public</span> <span class="kt">long</span>     <span class="n">Id</span>        <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="n">DateTime</span> <span class="n">CreatedAt</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="kt">string</span>   <span class="n">Text</span>      <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Simple REST API client  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">TwitterApiClient</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="k">const</span> <span class="kt">string</span> <span class="n">BaseUrl</span> <span class="p">=</span> <span class="s">&quot;https://api.twitter.com/1/statuses/&quot;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">public</span> <span class="k">void</span> <span class="nf">DoWithTweetsForUser</span><span class="p">(</span><span class="kt">string</span> <span class="n">username</span><span class="p">,</span> <span class="n">Action</span><span class="p">&lt;</span><span class="n">IList</span><span class="p">&lt;</span><span class="n">Tweet</span><span class="p">&gt;&gt;</span> <span class="n">callback</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="kt">var</span> <span class="n">webClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">WebClient</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">webClient</span><span class="p">.</span><span class="n">DownloadStringCompleted</span> <span class="p">+=</span> <span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span><span class='line'>            <span class="kt">var</span> <span class="n">tweets</span> <span class="p">=</span> <span class="p">(</span><span class="k">from</span> <span class="n">element</span> <span class="k">in</span> <span class="n">JsonValue</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">Result</span><span class="p">)</span> <span class="k">as</span> <span class="n">JsonArray</span>
+</span><span class='line'>                <span class="n">let</span> <span class="n">tweetData</span> <span class="p">=</span> <span class="n">element</span> <span class="k">as</span> <span class="n">JsonObject</span>
+</span><span class='line'>                <span class="k">select</span> <span class="k">new</span> <span class="n">Tweet</span> <span class="p">{</span>
+</span><span class='line'>                    <span class="n">Id</span>        <span class="p">=</span> <span class="n">tweetData</span><span class="p">[</span><span class="s">&quot;id&quot;</span><span class="p">],</span>
+</span><span class='line'>                    <span class="n">CreatedAt</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">ParseExact</span><span class="p">(</span><span class="n">tweetData</span><span class="p">[</span><span class="s">&quot;created_at&quot;</span><span class="p">],</span>
+</span><span class='line'>                                    <span class="s">&quot;ddd MMM dd HH:mm:ss zz00 yyyy&quot;</span><span class="p">,</span> <span class="k">null</span><span class="p">),</span>
+</span><span class='line'>                    <span class="n">Text</span>      <span class="p">=</span> <span class="n">tweetData</span><span class="p">[</span><span class="s">&quot;text&quot;</span><span class="p">],</span>
+</span><span class='line'>                <span class="p">})</span>
+</span><span class='line'>                <span class="p">.</span><span class="n">ToList</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="n">callback</span><span class="p">(</span><span class="n">tweets</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="kt">var</span> <span class="n">url</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&quot;{0}user_timeline.json?screen_name={1}&quot;</span><span class="p">,</span>
+</span><span class='line'>                                <span class="n">BaseUrl</span><span class="p">,</span> <span class="n">Uri</span><span class="p">.</span><span class="n">EscapeUriString</span><span class="p">(</span><span class="n">username</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">webClient</span><span class="p">.</span><span class="n">DownloadStringAsync</span><span class="p">(</span><span class="k">new</span> <span class="n">Uri</span><span class="p">(</span><span class="n">url</span><span class="p">));</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Exemplary user code  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="kt">var</span> <span class="n">apiClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">TwitterApiClient</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">apiClient</span><span class="p">.</span><span class="n">DoWithTweetsForUser</span><span class="p">(</span><span class="s">&quot;robi42&quot;</span><span class="p">,</span> <span class="n">tweets</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">tweet</span> <span class="k">in</span> <span class="n">tweets</span><span class="p">)</span> <span class="c1">// Just for demo purpose.</span>
+</span><span class='line'>        <span class="n">Debug</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Tweet from {0}: {1}&quot;</span><span class="p">,</span> <span class="n">tweet</span><span class="p">.</span><span class="n">CreatedAt</span><span class="p">,</span> <span class="n">tweet</span><span class="p">.</span><span class="n">Text</span><span class="p">);</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And with .NET 4.5&#8217;s new <a href="http://blogs.msdn.com/b/dotnet/archive/2012/04/03/async-in-4-5-worth-the-await.aspx">async features</a> landing in Monoland soon, related code will get even more convenient to write and handle.</p>
+
+<p>Pretty neat, IMHO. What do you think?</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -217,6 +362,10 @@ support &amp; proper JS bundling.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/09/24/xamarin-ftw/">Xamarin FTW?</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/09/21/play-2-boilerplate/">Play 2 Boilerplate</a>
