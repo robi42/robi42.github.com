@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-09-24T22:15:11+02:00</updated>
+  <updated>2012-09-24T22:31:23+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -18,7 +18,7 @@
     <link href="http://robi42.github.com/blog/2012/09/24/xamarin-ftw/"/>
     <updated>2012-09-24T20:02:00+02:00</updated>
     <id>http://robi42.github.com/blog/2012/09/24/xamarin-ftw</id>
-    <content type="html"><![CDATA[<p>Often, when developing a mobile app one wants to target iOS as well as Android (+ maybe MS OS).</p>
+    <content type="html"><![CDATA[<p>Often, when developing a mobile app one wants to target iOS as well as Android (+ maybe MS&#8217; OS).</p>
 
 <p>Now, this basically means developing the app from scratch and consequently maintaining it at least twice on different platforms, written in different languages (Objective-C and Java, that is), using different sets of tools etc.</p>
 
