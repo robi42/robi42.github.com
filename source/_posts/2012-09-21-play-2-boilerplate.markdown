@@ -3,7 +3,7 @@ layout: post
 title: "Play 2 Boilerplate"
 date: 2012-09-21 23:43
 comments: true
-categories: Code
+categories: Code Web
 ---
 
 A little project aimed at getting one up and running quickly with building a

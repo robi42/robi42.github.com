@@ -7,35 +7,51 @@ comments: true
 categories:
 ---
 
-``` C# Some Code
-using System;
-
-using MonoTouch.CoreLocation;
-using MonoTouch.MapKit;
-
-namespace Chapter6.MonoTouchApp
+{% codeblock Simple Tweet Model lang:csharp %}
+public class Tweet
 {
-    public class MapAnnotation : MKAnnotation
+    public long     Id        { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public string   Text      { get; set; }
+}
+{% endcodeblock %}
+
+{% codeblock Simple Twitter API Client lang:csharp %}
+public class TwitterApiClient
+{
+    const string BaseUrl = "https://api.twitter.com/1/statuses/";
+
+    public void DoWithTweetsForUser(string username, Action<IList<Tweet>> callback)
     {
-        readonly string        title;
-        CLLocationCoordinate2D coordinate;
+        var webClient = new WebClient();
 
-        public MapAnnotation(string title, CLLocationCoordinate2D coordinate)
-        {
-            this.title      = title;
-            this.coordinate = coordinate;
-        }
+        webClient.DownloadStringCompleted += (sender, e) => {
+            var tweets = (from element in JsonValue.Parse(e.Result) as JsonArray
+                let tweetData = element as JsonObject
+                select new Tweet {
+                    Id        = tweetData["id"],
+                    CreatedAt = DateTime.ParseExact(tweetData["created_at"],
+                                                    "ddd MMM dd HH:mm:ss zz00 yyyy", null),
+                    Text      = tweetData["text"],
+                })
+                .ToList();
 
-        public override CLLocationCoordinate2D Coordinate
-        {
-            get { return this.coordinate; }
-            set { this.coordinate = value; }
-        }
+            callback(tweets);
+        };
 
-        public override string Title
-        {
-            get { return this.title; }
-        }
+        var url = string.Format("{0}user_timeline.json?screen_name={1}",
+                                BaseUrl, Uri.EscapeUriString(username));
+
+        webClient.DownloadStringAsync(new Uri(url));
     }
 }
-```
+{% endcodeblock %}
+
+{% codeblock Exemplary User Code lang:csharp %}
+var apiClient = new TwitterApiClient();
+
+apiClient.DoWithTweetsForUser("robi42", tweets => {
+    foreach (var tweet in tweets) // Just for demo purpose.
+        Debug.WriteLine("Tweet from {0}: {1}", tweet.CreatedAt, tweet.Text);
+});
+{% endcodeblock %}
