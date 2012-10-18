@@ -12,7 +12,7 @@ Now, this basically means developing the app from scratch and consequently maint
 
 Cumbersome and potentially error-prone. Well, there's a viable alternative:
 
-With [Xamarin](http://xamarin.com/) one can write mobile apps targetting iOS and Android in C# using .NET (and native) libraries, sharing code (business logic, data & web service layers, utilites, ...) while creating fully native UIs built on each platform's own SDKs, providing access to all respective device capabilities.
+With [Xamarin](http://xamarin.com/) one can write mobile apps targetting iOS and Android in C# using .NET (and native) libraries, sharing code (business logic, data & web service layers, utilities, ...) while creating fully native UIs built on each platform's own SDKs, providing access to all respective device capabilities.
 
 In addition to that, there's for example [MonoTouch.Dialog](http://blog.xamarin.com/2012/02/10/easily-create-ios-user-interfaces-with-monotouch-dialog/) making it easier and more fun to create table-based iOS UIs and for Android there's a useful visual [UI design tool](http://docs.xamarin.com/android/tutorials/Designer_Walkthrough) within the MonoDevelop IDE. Plus, there's [Xamarin.Mobile](http://xamarin.com/mobileapi) aimed at exposing an unified API facade for accessing common device features. All interesting stuff when used sensibly.
 
