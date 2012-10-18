@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mobile | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/mobile/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-09-25T20:04:13+02:00</updated>
+  <updated>2012-10-18T22:40:31+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -24,7 +24,7 @@
 
 <p>Cumbersome and potentially error-prone. Well, there's a viable alternative:</p>
 
-<p>With <a href="http://xamarin.com/">Xamarin</a> one can write mobile apps targetting iOS and Android in C# using .NET (and native) libraries, sharing code (business logic, data &amp; web service layers, utilites, ...) while creating fully native UIs built on each platform's own SDKs, providing access to all respective device capabilities.</p>
+<p>With <a href="http://xamarin.com/">Xamarin</a> one can write mobile apps targetting iOS and Android in C# using .NET (and native) libraries, sharing code (business logic, data &amp; web service layers, utilities, ...) while creating fully native UIs built on each platform's own SDKs, providing access to all respective device capabilities.</p>
 
 <p>In addition to that, there's for example <a href="http://blog.xamarin.com/2012/02/10/easily-create-ios-user-interfaces-with-monotouch-dialog/">MonoTouch.Dialog</a> making it easier and more fun to create table-based iOS UIs and for Android there's a useful visual <a href="http://docs.xamarin.com/android/tutorials/Designer_Walkthrough">UI design tool</a> within the MonoDevelop IDE. Plus, there's <a href="http://xamarin.com/mobileapi">Xamarin.Mobile</a> aimed at exposing an unified API facade for accessing common device features. All interesting stuff when used sensibly.</p>
 
