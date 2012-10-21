@@ -9,7 +9,9 @@
   <meta name="author" content="Robert Thurnher">
 
   
-  <meta name="description" content="Often, when developing a mobile app one wants to target iOS as well as Android (+ maybe MS&#8217; OS). Now, this basically means developing the app &hellip;">
+  <meta name="description" content="Here&#8217;re some tips for conveniently generating automated app stats from MySQL data. Recommended toolchain: R + RStudio
+RMySQL + ggplot2
+Cron + &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +78,217 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/21/pragmatic-app-stats-with-r/">Pragmatic App Stats With R</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-21T15:00:00+02:00"  data-updated="true">Oct 21<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Here&#8217;re some tips for conveniently generating automated app stats from MySQL data.</p>
+
+<p>Recommended toolchain:</p>
+
+<ul>
+<li><a href="http://www.r-project.org/">R</a> + <a href="http://www.rstudio.org/">RStudio</a></li>
+<li><a href="http://cran.r-project.org/web/packages/RMySQL/">RMySQL</a> + <a href="http://ggplot2.org/">ggplot2</a></li>
+<li>Cron + mailx &amp; co.</li>
+</ul>
+
+
+<p>Corresponding code bits:</p>
+
+<figure class='code'><figcaption><span>Simplified R script  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1">#!/usr/bin/Rscript</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#install.packages(&quot;RMySQL&quot;)</span>
+</span><span class='line'><span class="c1">#install.packages(&quot;ggplot2&quot;)</span>
+</span><span class='line'>
+</span><span class='line'>library<span class="p">(</span>RMySQL<span class="p">)</span>
+</span><span class='line'>library<span class="p">(</span>ggplot2<span class="p">)</span>
+</span><span class='line'>library<span class="p">(</span>grid<span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># PNG layout of plots helper.</span>
+</span><span class='line'>vplayout <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">,</span> y<span class="p">)</span> viewport<span class="p">(</span>layout.pos.row<span class="o">=</span>x<span class="p">,</span> layout.pos.col<span class="o">=</span>y<span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Connect to DB.</span>
+</span><span class='line'>dbUsername <span class="o">&lt;-</span> <span class="s">&#39;some_user&#39;</span>
+</span><span class='line'>dbPassword <span class="o">&lt;-</span> <span class="s">&#39;some_password&#39;</span>
+</span><span class='line'>dbName     <span class="o">&lt;-</span> <span class="s">&#39;app_stats_snapshot&#39;</span>
+</span><span class='line'>dbHost     <span class="o">&lt;-</span> <span class="s">&#39;localhost&#39;</span>
+</span><span class='line'>
+</span><span class='line'>dbConnection <span class="o">&lt;-</span> dbConnect<span class="p">(</span>MySQL<span class="p">(),</span> user<span class="o">=</span>dbUsername<span class="p">,</span> password<span class="o">=</span>dbPassword<span class="p">,</span>
+</span><span class='line'>                          dbname<span class="o">=</span>dbName<span class="p">,</span> host<span class="o">=</span>dbHost<span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Exemplary queries.</span>
+</span><span class='line'>recordsPerDayQuery <span class="o">&lt;-</span>
+</span><span class='line'>  <span class="s">&#39;select date(created_at) as Day, count(*) as Count from records where created_at &gt;= &quot;2012-1-1&quot; and created_at &lt; date(now()) group by Day&#39;</span>
+</span><span class='line'>
+</span><span class='line'>otherRecordsPerDayQuery <span class="o">&lt;-</span>
+</span><span class='line'>  <span class="s">&#39;select date(created_at) as Day, count(*) as Count from other_records where created_at &gt;= &quot;2012-1-1&quot; and created_at &lt; date(now()) group by Day&#39;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Query and plot.</span>
+</span><span class='line'>d1 <span class="o">&lt;-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> recordsPerDayQuery<span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>xlabText <span class="o">&lt;-</span> <span class="s">&#39;2012&#39;</span><span class="p">;</span> ylabText <span class="o">&lt;-</span> <span class="s">&#39;Count&#39;</span>
+</span><span class='line'>Records <span class="o">&lt;-</span> d1<span class="p">$</span>Count
+</span><span class='line'>heading1 <span class="o">&lt;-</span> <span class="s">&#39;Records per Day&#39;</span>
+</span><span class='line'>
+</span><span class='line'>plot1 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d1<span class="p">$</span>Day<span class="p">),</span> d1<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Records<span class="p">,</span>
+</span><span class='line'>               main<span class="o">=</span>heading1<span class="p">,</span> xlab<span class="o">=</span>xlabText<span class="p">,</span> ylab<span class="o">=</span>ylabText<span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>d2 <span class="o">&lt;-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> otherRecordsPerDayQuery<span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>Other <span class="o">&lt;-</span> d2<span class="p">$</span>Count
+</span><span class='line'>heading2 <span class="o">&lt;-</span> <span class="s">&#39;Other Records per Day&#39;</span>
+</span><span class='line'>
+</span><span class='line'>plot2 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="p">$</span>Day<span class="p">),</span> d2<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span>
+</span><span class='line'>               main<span class="o">=</span>heading2<span class="p">,</span> xlab<span class="o">=</span><span class="s">&#39;2012&#39;</span><span class="p">,</span> ylab<span class="o">=</span><span class="s">&#39;Count&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Write data tables to mail text file.</span>
+</span><span class='line'>mailTextFilename <span class="o">&lt;-</span> <span class="s">&#39;/path/to/stats-mail.txt&#39;</span>
+</span><span class='line'>
+</span><span class='line'>cat<span class="p">(</span>paste<span class="p">(</span><span class="s">&#39;Hi,\n\n#&#39;</span><span class="p">,</span> heading1<span class="p">,</span> <span class="s">&#39;\n&#39;</span><span class="p">),</span> file<span class="o">=</span>mailTextFilename<span class="p">)</span>
+</span><span class='line'>write.table<span class="p">(</span>d1<span class="p">,</span> file<span class="o">=</span>mailTextFilename<span class="p">,</span> append<span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span>
+</span><span class='line'>            row.names<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> quote<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&#39; | &#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>cat<span class="p">(</span>paste<span class="p">(</span><span class="s">&#39;\n#&#39;</span><span class="p">,</span> heading2<span class="p">,</span> <span class="s">&#39;\n&#39;</span><span class="p">),</span> file<span class="o">=</span>mailTextFilename<span class="p">,</span> append<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+</span><span class='line'>write.table<span class="p">(</span>d2<span class="p">,</span> file<span class="o">=</span>mailTextFilename<span class="p">,</span> append<span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span>
+</span><span class='line'>            row.names<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> quote<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&#39; | &#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Make PNG with plots.</span>
+</span><span class='line'>png<span class="p">(</span><span class="s">&#39;/path/to/stats.png&#39;</span><span class="p">,</span> width<span class="o">=</span><span class="m">1024</span><span class="p">,</span> height<span class="o">=</span><span class="m">800</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>grid.newpage<span class="p">()</span>
+</span><span class='line'>pushViewport<span class="p">(</span>viewport<span class="p">(</span>layout<span class="o">=</span>grid.layout<span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">)))</span>
+</span><span class='line'>
+</span><span class='line'>print<span class="p">(</span>plot1<span class="p">,</span> vp<span class="o">=</span>vplayout<span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+</span><span class='line'>print<span class="p">(</span>plot2<span class="p">,</span> vp<span class="o">=</span>vplayout<span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+</span><span class='line'>
+</span><span class='line'>dev.off<span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Related crontab sending stats mail once per week  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># m h  dom mon dow   command</span>
+</span><span class='line'>30 4 * * 1 /path/to/stats.r
+</span><span class='line'>0  5 * * 1 mailx -s <span class="s1">&#39;[Example] Stats&#39;</span> -a /path/to/stats.png stats@example.com &lt; /path/to/stats-mail.txt
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>HTH.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -360,6 +573,10 @@ support &amp; proper JS bundling.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/10/21/pragmatic-app-stats-with-r/">Pragmatic App Stats With R</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/09/24/xamarin-ftw/">Xamarin FTW?</a>
