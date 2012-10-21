@@ -12,7 +12,7 @@ Recommended toolchain:
 
  * [R](http://www.r-project.org/) + [RStudio](http://www.rstudio.org/)
  * [RMySQL](http://cran.r-project.org/web/packages/RMySQL/) + [ggplot2](http://ggplot2.org/)
- * Cron + mailx & co.
+ * *nix, cron + mailx & co.
 
 Corresponding code bits to get one started:
 
