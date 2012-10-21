@@ -118,7 +118,7 @@ Cron + &hellip;">
 </ul>
 
 
-<p>Corresponding code bits:</p>
+<p>Corresponding code bits to get one started:</p>
 
 <figure class='code'><figcaption><span>Simplified R script  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -194,6 +194,10 @@ Cron + &hellip;">
 <span class='line-number'>71</span>
 <span class='line-number'>72</span>
 <span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
 </pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1">#!/usr/bin/Rscript</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1">#install.packages(&#39;RMySQL&#39;)</span>
@@ -224,6 +228,7 @@ Cron + &hellip;">
 </span><span class='line'>
 </span><span class='line'>otherRecordsPerDayQuery <span class="o">&lt;-</span>
 </span><span class='line'>  <span class="s">&#39;select date(created_at) as Day, count(*) as Count from other_records where created_at &gt;= &quot;2012-1-1&quot; and created_at &lt; date(now()) group by Day&#39;</span>
+</span><span class='line'><span class="c1"># ...</span>
 </span><span class='line'>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># Query and plot.</span>
@@ -243,6 +248,7 @@ Cron + &hellip;">
 </span><span class='line'>
 </span><span class='line'>plot2 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="p">$</span>Day<span class="p">),</span> d2<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span>
 </span><span class='line'>               main<span class="o">=</span>heading2<span class="p">,</span> xlab<span class="o">=</span><span class="s">&#39;2012&#39;</span><span class="p">,</span> ylab<span class="o">=</span><span class="s">&#39;Count&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="c1"># ...</span>
 </span><span class='line'>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># Write data tables to mail text file.</span>
@@ -255,6 +261,7 @@ Cron + &hellip;">
 </span><span class='line'>cat<span class="p">(</span>paste<span class="p">(</span><span class="s">&#39;\n#&#39;</span><span class="p">,</span> heading2<span class="p">,</span> <span class="s">&#39;\n&#39;</span><span class="p">),</span> file<span class="o">=</span>mailTextFilename<span class="p">,</span> append<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
 </span><span class='line'>write.table<span class="p">(</span>d2<span class="p">,</span> file<span class="o">=</span>mailTextFilename<span class="p">,</span> append<span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span>
 </span><span class='line'>            row.names<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> quote<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&#39; | &#39;</span><span class="p">)</span>
+</span><span class='line'><span class="c1"># ...</span>
 </span><span class='line'>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># Make PNG with plots.</span>
@@ -265,6 +272,7 @@ Cron + &hellip;">
 </span><span class='line'>
 </span><span class='line'>print<span class="p">(</span>plot1<span class="p">,</span> vp<span class="o">=</span>vplayout<span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
 </span><span class='line'>print<span class="p">(</span>plot2<span class="p">,</span> vp<span class="o">=</span>vplayout<span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+</span><span class='line'><span class="c1"># ...</span>
 </span><span class='line'>
 </span><span class='line'>dev.off<span class="p">()</span>
 </span></code></pre></td></tr></table></div></figure>
