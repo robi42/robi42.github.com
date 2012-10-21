@@ -19,8 +19,8 @@ Corresponding code bits:
 {% codeblock Simplified R script lang:r %}
 #!/usr/bin/Rscript
 
-#install.packages("RMySQL")
-#install.packages("ggplot2")
+#install.packages('RMySQL')
+#install.packages('ggplot2')
 
 library(RMySQL)
 library(ggplot2)
