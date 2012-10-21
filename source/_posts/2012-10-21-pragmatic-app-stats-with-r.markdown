@@ -14,7 +14,7 @@ Recommended toolchain:
  * [RMySQL](http://cran.r-project.org/web/packages/RMySQL/) + [ggplot2](http://ggplot2.org/)
  * Cron + mailx & co.
 
-Corresponding code bits:
+Corresponding code bits to get one started:
 
 {% codeblock Simplified R script lang:r %}
 #!/usr/bin/Rscript
@@ -47,6 +47,7 @@ recordsPerDayQuery <-
 
 otherRecordsPerDayQuery <-
   'select date(created_at) as Day, count(*) as Count from other_records where created_at >= "2012-1-1" and created_at < date(now()) group by Day'
+# ...
 
 
 # Query and plot.
@@ -66,6 +67,7 @@ heading2 <- 'Other Records per Day'
 
 plot2 <- qplot(as.Date(d2$Day), d2$Count, geom='line', color=Other,
                main=heading2, xlab='2012', ylab='Count')
+# ...
 
 
 # Write data tables to mail text file.
@@ -78,6 +80,7 @@ write.table(d1, file=mailTextFilename, append=TRUE,
 cat(paste('\n#', heading2, '\n'), file=mailTextFilename, append=TRUE)
 write.table(d2, file=mailTextFilename, append=TRUE,
             row.names=FALSE, quote=FALSE, sep=' | ')
+# ...
 
 
 # Make PNG with plots.
@@ -88,6 +91,7 @@ pushViewport(viewport(layout=grid.layout(2, 1)))
 
 print(plot1, vp=vplayout(1, 1))
 print(plot2, vp=vplayout(2, 1))
+# ...
 
 dev.off()
 
