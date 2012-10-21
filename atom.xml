@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-10-21T16:01:03+02:00</updated>
+  <updated>2012-10-21T16:09:20+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -107,8 +107,8 @@
 <span class='line-number'>73</span>
 </pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1">#!/usr/bin/Rscript</span>
 </span><span class='line'>
-</span><span class='line'><span class="c1">#install.packages(&quot;RMySQL&quot;)</span>
-</span><span class='line'><span class="c1">#install.packages(&quot;ggplot2&quot;)</span>
+</span><span class='line'><span class="c1">#install.packages(&#39;RMySQL&#39;)</span>
+</span><span class='line'><span class="c1">#install.packages(&#39;ggplot2&#39;)</span>
 </span><span class='line'>
 </span><span class='line'>library<span class="p">(</span>RMySQL<span class="p">)</span>
 </span><span class='line'>library<span class="p">(</span>ggplot2<span class="p">)</span>
