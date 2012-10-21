@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-10-21T16:57:48+02:00</updated>
+  <updated>2012-10-21T17:23:56+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -25,7 +25,7 @@
 <ul>
 <li><a href="http://www.r-project.org/">R</a> + <a href="http://www.rstudio.org/">RStudio</a></li>
 <li><a href="http://cran.r-project.org/web/packages/RMySQL/">RMySQL</a> + <a href="http://ggplot2.org/">ggplot2</a></li>
-<li>Cron + mailx &amp; co.</li>
+<li>*nix, cron + mailx &amp; co.</li>
 </ul>
 
 
