@@ -50,7 +50,7 @@ otherRecordsPerDayQuery <-
 # ...
 
 
-# Query and plot.
+# Query and plot data.
 d1 <- dbGetQuery(dbConnection, recordsPerDayQuery)
 
 xlabText <- '2012'; ylabText <- 'Count'
