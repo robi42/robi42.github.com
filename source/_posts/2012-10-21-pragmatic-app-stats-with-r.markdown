@@ -50,7 +50,7 @@ otherRecordsPerDayQuery <-
 # ...
 
 
-# Query and plot data.
+# Query data and plot charts.
 d1 <- dbGetQuery(dbConnection, recordsPerDayQuery)
 
 xlabText <- '2012'; ylabText <- 'Count'
@@ -83,7 +83,7 @@ write.table(d2, file=mailTextFilename, append=TRUE,
 # ...
 
 
-# Make PNG with plots.
+# Make PNG with plotted charts.
 png('/path/to/stats.png', width=1024, height=800)
 
 grid.newpage()
