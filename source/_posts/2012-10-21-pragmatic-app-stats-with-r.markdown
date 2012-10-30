@@ -43,10 +43,10 @@ dbConnection <- dbConnect(MySQL(), user=dbUsername, password=dbPassword,
 
 # Exemplary queries.
 recordsPerDayQuery <-
-  'select date(created_at) as Day, count(*) as Count from records where created_at >= "2012-1-1" and created_at < date(now()) group by Day'
+  'select date(created_at) as Day, count(*) as Count from records where created_at >= "2012-1-1" and date(created_at) < date(now()) group by Day'
 
 otherRecordsPerDayQuery <-
-  'select date(created_at) as Day, count(*) as Count from other_records where created_at >= "2012-1-1" and created_at < date(now()) group by Day'
+  'select date(created_at) as Day, count(*) as Count from other_records where created_at >= "2012-1-1" and date(created_at) < date(now()) group by Day'
 # ...
 
 
@@ -84,7 +84,7 @@ write.table(d2, file=mailTextFilename, append=TRUE,
 
 
 # Make PNG with plotted charts.
-png('/path/to/stats.png', width=1024, height=800)
+png('/path/to/stats.png', width=1024, height=748)
 
 grid.newpage()
 pushViewport(viewport(layout=grid.layout(2, 1)))
