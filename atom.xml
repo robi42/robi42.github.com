@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-10-30T15:49:50+01:00</updated>
+  <updated>2012-10-30T18:57:29+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -176,7 +176,7 @@
 </span><span class='line'>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># Make PNG with plotted charts.</span>
-</span><span class='line'>png<span class="p">(</span><span class="s">&#39;/path/to/stats.png&#39;</span><span class="p">,</span> width<span class="o">=</span><span class="m">1024</span><span class="p">,</span> height<span class="o">=</span><span class="m">748</span><span class="p">)</span>
+</span><span class='line'>png<span class="p">(</span><span class="s">&#39;/path/to/stats.png&#39;</span><span class="p">,</span> width<span class="o">=</span><span class="m">1024</span><span class="p">,</span> height<span class="o">=</span><span class="m">768</span><span class="p">)</span>
 </span><span class='line'>
 </span><span class='line'>grid.newpage<span class="p">()</span>
 </span><span class='line'>pushViewport<span class="p">(</span>viewport<span class="p">(</span>layout<span class="o">=</span>grid.layout<span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">)))</span>
