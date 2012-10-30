@@ -84,7 +84,7 @@ write.table(d2, file=mailTextFilename, append=TRUE,
 
 
 # Make PNG with plotted charts.
-png('/path/to/stats.png', width=1024, height=748)
+png('/path/to/stats.png', width=1024, height=768)
 
 grid.newpage()
 pushViewport(viewport(layout=grid.layout(2, 1)))
