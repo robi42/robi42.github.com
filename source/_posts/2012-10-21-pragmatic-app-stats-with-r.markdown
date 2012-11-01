@@ -3,7 +3,7 @@ layout: post
 title: "Pragmatic App Stats With R"
 date: 2012-10-21 15:00
 comments: true
-categories:
+categories: Datavis
 ---
 
 Here're some tips for conveniently generating automated app stats from MySQL data.
