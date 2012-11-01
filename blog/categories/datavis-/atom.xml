@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Datavis | Robi's Blog]]></title>
-  <link href="http://robi42.github.com/blog/categories/datavis/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Datavis, | Robi's Blog]]></title>
+  <link href="http://robi42.github.com/blog/categories/datavis-/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-11-01T19:07:43+01:00</updated>
+  <updated>2012-11-01T19:09:20+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
