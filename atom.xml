@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-11-21T23:06:19+01:00</updated>
+  <updated>2012-11-21T23:08:15+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -46,7 +46,7 @@
 
 <p><img src="http://robi42.github.com/images/spotify-sonarflow/screenshot5.png" title="Screenshot 5" alt="Screenshot 5"></p>
 
-<p>Intuitively, clicking a bubble plays the respective track in the Spotify player, BTW.</p>
+<p>Intuitively, clicking a bubble plays the respective track in the Spotify audio player, BTW.</p>
 
 <h2>Conclusion</h2>
 
