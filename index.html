@@ -9,9 +9,7 @@
   <meta name="author" content="Robert Thurnher">
 
   
-  <meta name="description" content="Here&#8217;re some tips for conveniently generating automated app stats from MySQL data. Recommended toolchain: R + RStudio
-RMySQL + ggplot2
-*nix, &hellip;">
+  <meta name="description" content="This project which I&#8217;ve finished recently is in its essence implementing an innovative way of visualizing Spotify music collection data. It&# &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +76,72 @@ RMySQL + ggplot2
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/21/a-visual-music-exploration-plugin-app-for-spotifys-desktop-client/">A Visual Music Exploration Plugin App for Spotify&#8217;s Desktop Client</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-21T20:21:00+01:00"  data-updated="true">Nov 21<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This project which I&#8217;ve finished recently is in its essence implementing an innovative way of visualizing Spotify music collection data. It&#8217;s mainly geared towards discovery of similar music related to the currently played tracks of a user. Technically, the project partially builds upon the foundation layed out with a previous labs project &#8211; here&#8217;s a <a href="http://sftb.herokuapp.com/docs/report.pdf">report</a> (PDF). Organisationally, it was done as a cooperation with <a href="http://www.spectralmind.com/">Spectralmind</a> and the <a href="http://ifs.tuwien.ac.at/mir/">MIR group</a> of Vienna University of Technology.</p>
+
+<h2>Implementation</h2>
+
+<p>Basically, the app connects to <strong>Last.fm</strong> data for similarity computation with their (more or less) RESTful web service API via JSONP. In addition to that, <strong>Spotify</strong>&#8217;s desktop client plugin apps JS API is used pretty heavily. The graphics are rendered as interactive SVG through <strong>Raphael.js</strong>. Plus, <strong>Backbone.js</strong> is applied as a mean to improve structure and, consequently, maintainability of the app. For layouting the animated visualization itself a force-based <a href="http://en.wikipedia.org/wiki/Force-based_algorithms_%28graph_drawing%29">spring graph</a> algorithm implementation is employed which was orginally written within Google&#8217;s Caja project and now adapted for the specific use case here.</p>
+
+<h2>Functionality</h2>
+
+<p>In the beginning, the user sees the current track symbolized by a central blue bubble and a loading spinner indicating app activity. Here&#8217;s a screenshot:</p>
+
+<p><img src="images/spotify-sonarflow/screenshot1.png" title="Screenshot 1" alt="Screenshot 1"></p>
+
+<p>After that, found similar tracks are arranged as red bubbles in a concentric circle around the central one. Again, a screenshot:</p>
+
+<p><img src="images/spotify-sonarflow/screenshot2.png" title="Screenshot 2" alt="Screenshot 2"></p>
+
+<p>Here&#8217;s how the actual animated spring graph algorithmic layouting visualization initially looks like:</p>
+
+<p><img src="images/spotify-sonarflow/screenshot3.png" title="Screenshot 3" alt="Screenshot 3"></p>
+
+<p>And this is how it can look like when the animation finished rendering:</p>
+
+<p><img src="images/spotify-sonarflow/screenshot4.png" title="Screenshot 4" alt="Screenshot 4"></p>
+
+<p>The history of played tracks is visualized as a diagonal, interactive sort of a time axis which can also be seen here:</p>
+
+<p><img src="images/spotify-sonarflow/screenshot5.png" title="Screenshot 5" alt="Screenshot 5"></p>
+
+<h2>Conclusion</h2>
+
+<p>The approach proved to be viable and it can be indeed worthwhile searching and discovering new music fitting to one&#8217;s individual taste in an entertaining way with this Spotify plugin app. Nevertheless, there are still numerous details where improvements and enhancements are possible. E.g., the graphics and visualization could be made more pleasant. Apart from that, also further tweaking related to similarity computation could be done. Yet, as a research prototype demonstrating a proof of concept this is sufficient and possibly it&#8217;ll show up within a polished product in one way or another. :)</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -581,6 +645,10 @@ support &amp; proper JS bundling.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/11/21/a-visual-music-exploration-plugin-app-for-spotifys-desktop-client/">A Visual Music Exploration Plugin App for Spotify&#8217;s Desktop Client</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/10/21/pragmatic-app-stats-with-r/">Pragmatic App Stats With R</a>
