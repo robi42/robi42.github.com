@@ -4,7 +4,7 @@
   <title><![CDATA[Category: App | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/app/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-11-21T21:50:01+01:00</updated>
+  <updated>2012-11-21T21:51:33+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -48,7 +48,7 @@
 
 <h2>Conclusion</h2>
 
-<p>The approach proved to be viable and it can be indeed worthwhile searching and discovering new music fitting to one's individual taste in an entertaining way with this Spotify plugin app. Nevertheless, there are still numerous details where improvements and enhancements are possible. E.g., the graphics and visualization could be made more pleasant. Apart from that, also further tweaking related to similarity computation could be done. Yet, as a research prototype demonstrating a proof of concept this is sufficient and possibly it'll show up within a polished product in one way or another. :)</p>
+<p>The approach proved to be viable and it can be indeed worthwhile searching and discovering new music fitting to one's individual taste in an entertaining way with this Spotify plugin app. Nevertheless, there are still numerous details where improvements and enhancements are possible. E.g., the graphics and visualization could be made more pleasant. Apart from that, also further tweaking related to similarity computation could be done. Yet, as a research prototype demonstrating a proof of concept this is sufficient, it was fun building it, and possibly it'll show up within a polished product in one way or another. :)</p>
 ]]></content>
   </entry>
   
