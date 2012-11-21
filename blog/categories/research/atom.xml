@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Research | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/research/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-11-21T22:21:10+01:00</updated>
+  <updated>2012-11-21T22:26:25+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -22,7 +22,7 @@
 
 <h2>Implementation</h2>
 
-<p>Basically, the app connects to <strong>Last.fm</strong> data for similarity computation with their (more or less) RESTful web service API via JSONP. In addition to that, <strong>Spotify</strong>'s desktop client <a href="https://developer.spotify.com/technologies/apps/">plugin apps</a> JS API is used pretty heavily. The graphics are rendered as interactive SVG through <strong>Raphael.js</strong>. Plus, <strong>Backbone.js</strong> is applied as a mean to improve structure and, consequently, maintainability of the app. For layouting the animated visualization itself a force-based <a href="http://en.wikipedia.org/wiki/Force-based_algorithms_%28graph_drawing%29">spring graph</a> algorithm implementation is employed which was orginally written within Google's Caja project and now adapted for the specific use case here.</p>
+<p>Basically, the app connects to <strong>Last.fm</strong> data for similarity computation with their (more or less) RESTful web service API via JSONP. In addition to that, <strong>Spotify</strong>'s desktop client <a href="https://developer.spotify.com/technologies/apps/">plugin apps</a> JS API is used pretty heavily. The graphics are rendered as interactive SVG through <strong>Raphaël.js</strong>. Plus, <strong>Backbone.js</strong> is applied as a mean to improve structure and, consequently, maintainability of the app. For layouting the animated visualization itself a force-based <a href="http://en.wikipedia.org/wiki/Force-based_algorithms_%28graph_drawing%29">spring graph</a> algorithm implementation is employed which was orginally written within Google's Caja project and now adapted for the specific use case here.</p>
 
 <h2>Functionality</h2>
 
