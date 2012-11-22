@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Research | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/research/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-11-22T11:26:56+01:00</updated>
+  <updated>2012-11-22T11:47:13+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -18,7 +18,7 @@
     <link href="http://robi42.github.com/blog/2012/11/21/a-visual-music-exploration-plugin-app-for-spotifys-desktop-client/"/>
     <updated>2012-11-21T20:21:00+01:00</updated>
     <id>http://robi42.github.com/blog/2012/11/21/a-visual-music-exploration-plugin-app-for-spotifys-desktop-client</id>
-    <content type="html"><![CDATA[<p>This project which I've finished recently is in its essence implementing an innovative way of visualizing Spotify music collection data. It's mainly geared towards discovery of similar music related to the currently played tracks of a user. Technically, the project partially builds upon the foundation layed out with a previous labs project -- here's a <a href="http://sftb.herokuapp.com/docs/report.pdf">report</a> (PDF). Organisationally, it was done as a cooperation with <a href="http://www.spectralmind.com/">Spectralmind</a> and the <a href="http://ifs.tuwien.ac.at/mir/">MIR group</a> of Vienna University of Technology.</p>
+    <content type="html"><![CDATA[<p>This R&amp;D project which I've finished recently is in its essence implementing an innovative way of visualizing Spotify music collection data. It's mainly geared towards discovery of similar music related to the currently played tracks of a user. Technically, the project partially builds upon the foundation layed out with a previous labs project -- here's a <a href="http://sftb.herokuapp.com/docs/report.pdf">report</a> (PDF). Organisationally, it was done as a cooperation with <a href="http://www.spectralmind.com/">Spectralmind</a> and the <a href="http://ifs.tuwien.ac.at/mir/">MIR group</a> of Vienna University of Technology.</p>
 
 <h2>Implementation</h2>
 
