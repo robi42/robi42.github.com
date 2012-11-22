@@ -25,7 +25,7 @@ After that, found similar tracks are arranged as red bubbles in a concentric cir
 
 {% img /images/spotify-sonarflow/screenshot2.png 'Screenshot 2' 'Screenshot 2' %}
 
-Here's how the actual animated spring graph algorithmic layouting visualization initially looks like:
+Here's how the actual animated spring graph layouting visualization initially looks like:
 
 {% img /images/spotify-sonarflow/screenshot3.png 'Screenshot 3' 'Screenshot 3' %}
 
