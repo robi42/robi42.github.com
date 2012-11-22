@@ -37,7 +37,7 @@ The history of played tracks is visualized as a diagonal, interactive sort of a 
 
 {% img /images/spotify-sonarflow/screenshot5.png 'Screenshot 5' 'Screenshot 5' %}
 
-Intuitively, clicking a bubble plays the respective track in the Spotify audio player, BTW.
+Intuitively, clicking on a bubble plays the respective track in the Spotify audio player and triggers another visualization iteration, BTW.
 
 
 ## Conclusion
