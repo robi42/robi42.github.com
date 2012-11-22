@@ -44,4 +44,4 @@ Intuitively, clicking on a bubble plays the respective track in the Spotify audi
 
 The approach proved to be viable and it can be worthwhile indeed searching and discovering new music fitting to one's individual taste in an entertaining way with this Spotify plugin app. Nevertheless, there are still numerous details where improvements and enhancements are possible. E.g., the graphics and visualization could be made more pleasant. Apart from that, also further tweaking connected to similarity computation could be done. Yet, as a research prototype demonstrating a proof of concept this is sufficient, it was fun building it, and possibly it'll show up within a polished product in one way or another. :)
 
-PS: Spectralmind is currently looking for Android developers -- I'd recommend [applying](http://www.spectralmind.com/company/jobs/) since they're great folks to work with on interesting projects.
+**PS:** Spectralmind is currently looking for Android developers -- I'd recommend [applying](http://www.spectralmind.com/company/jobs/) since they're great folks to work with on interesting projects.
