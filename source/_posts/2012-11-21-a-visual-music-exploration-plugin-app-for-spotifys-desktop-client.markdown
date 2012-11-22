@@ -19,23 +19,23 @@ Basically, the app connects to **Last.fm** data for similarity computation with 
 
 In the beginning, the user sees the current track symbolized by a central blue bubble and a loading spinner indicating app activity. Here's a screenshot:
 
-{% img /images/spotify-sonarflow/screenshot1.png 'Screenshot 1' 'Screenshot 1' %}
+{% img /images/spotify-bubbles/screenshot1.png 'Screenshot 1' 'Screenshot 1' %}
 
 After that, found similar tracks are arranged as red bubbles in a concentric circle around the central one. Again, a screenshot:
 
-{% img /images/spotify-sonarflow/screenshot2.png 'Screenshot 2' 'Screenshot 2' %}
+{% img /images/spotify-bubbles/screenshot2.png 'Screenshot 2' 'Screenshot 2' %}
 
 Here's how the actual animated spring graph layouting visualization initially looks like:
 
-{% img /images/spotify-sonarflow/screenshot3.png 'Screenshot 3' 'Screenshot 3' %}
+{% img /images/spotify-bubbles/screenshot3.png 'Screenshot 3' 'Screenshot 3' %}
 
 And this is how it can look like when the animation finished rendering:
 
-{% img /images/spotify-sonarflow/screenshot4.png 'Screenshot 4' 'Screenshot 4' %}
+{% img /images/spotify-bubbles/screenshot4.png 'Screenshot 4' 'Screenshot 4' %}
 
 The history of played tracks is visualized as a diagonal, interactive sort of a time axis which can also be seen here:
 
-{% img /images/spotify-sonarflow/screenshot5.png 'Screenshot 5' 'Screenshot 5' %}
+{% img /images/spotify-bubbles/screenshot5.png 'Screenshot 5' 'Screenshot 5' %}
 
 Intuitively, clicking on a bubble plays the respective track in the Spotify audio player and triggers a visualization iteration, BTW.
 
