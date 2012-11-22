@@ -7,7 +7,7 @@ categories: App Research
 ---
 
 
-This project which I've finished recently is in its essence implementing an innovative way of visualizing Spotify music collection data. It's mainly geared towards discovery of similar music related to the currently played tracks of a user. Technically, the project partially builds upon the foundation layed out with a previous labs project -- here's a [report](http://sftb.herokuapp.com/docs/report.pdf) (PDF). Organisationally, it was done as a cooperation with [Spectralmind](http://www.spectralmind.com/) and the [MIR group](http://ifs.tuwien.ac.at/mir/) of Vienna University of Technology.
+This R&D project which I've finished recently is in its essence implementing an innovative way of visualizing Spotify music collection data. It's mainly geared towards discovery of similar music related to the currently played tracks of a user. Technically, the project partially builds upon the foundation layed out with a previous labs project -- here's a [report](http://sftb.herokuapp.com/docs/report.pdf) (PDF). Organisationally, it was done as a cooperation with [Spectralmind](http://www.spectralmind.com/) and the [MIR group](http://ifs.tuwien.ac.at/mir/) of Vienna University of Technology.
 
 
 ## Implementation
