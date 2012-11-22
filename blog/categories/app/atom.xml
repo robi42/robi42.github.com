@@ -4,7 +4,7 @@
   <title><![CDATA[Category: App | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/app/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-11-22T12:15:19+01:00</updated>
+  <updated>2012-11-22T12:25:39+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -28,23 +28,23 @@
 
 <p>In the beginning, the user sees the current track symbolized by a central blue bubble and a loading spinner indicating app activity. Here's a screenshot:</p>
 
-<p><img src="/images/spotify-sonarflow/screenshot1.png" title="Screenshot 1" alt="Screenshot 1"></p>
+<p><img src="/images/spotify-bubbles/screenshot1.png" title="Screenshot 1" alt="Screenshot 1"></p>
 
 <p>After that, found similar tracks are arranged as red bubbles in a concentric circle around the central one. Again, a screenshot:</p>
 
-<p><img src="/images/spotify-sonarflow/screenshot2.png" title="Screenshot 2" alt="Screenshot 2"></p>
+<p><img src="/images/spotify-bubbles/screenshot2.png" title="Screenshot 2" alt="Screenshot 2"></p>
 
 <p>Here's how the actual animated spring graph layouting visualization initially looks like:</p>
 
-<p><img src="/images/spotify-sonarflow/screenshot3.png" title="Screenshot 3" alt="Screenshot 3"></p>
+<p><img src="/images/spotify-bubbles/screenshot3.png" title="Screenshot 3" alt="Screenshot 3"></p>
 
 <p>And this is how it can look like when the animation finished rendering:</p>
 
-<p><img src="/images/spotify-sonarflow/screenshot4.png" title="Screenshot 4" alt="Screenshot 4"></p>
+<p><img src="/images/spotify-bubbles/screenshot4.png" title="Screenshot 4" alt="Screenshot 4"></p>
 
 <p>The history of played tracks is visualized as a diagonal, interactive sort of a time axis which can also be seen here:</p>
 
-<p><img src="/images/spotify-sonarflow/screenshot5.png" title="Screenshot 5" alt="Screenshot 5"></p>
+<p><img src="/images/spotify-bubbles/screenshot5.png" title="Screenshot 5" alt="Screenshot 5"></p>
 
 <p>Intuitively, clicking on a bubble plays the respective track in the Spotify audio player and triggers a visualization iteration, BTW.</p>
 
