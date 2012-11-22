@@ -4,7 +4,7 @@
   <title><![CDATA[Category: App | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/app/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2012-11-22T11:23:52+01:00</updated>
+  <updated>2012-11-22T11:25:28+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -46,7 +46,7 @@
 
 <p><img src="/images/spotify-sonarflow/screenshot5.png" title="Screenshot 5" alt="Screenshot 5"></p>
 
-<p>Intuitively, clicking on a bubble plays the respective track in the Spotify audio player and triggers another visualization iteration, BTW.</p>
+<p>Intuitively, clicking on a bubble plays the respective track in the Spotify audio player and triggers a visualization iteration, BTW.</p>
 
 <h2>Conclusion</h2>
 
