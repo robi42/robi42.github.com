@@ -12,7 +12,7 @@ This project which I've finished recently is in its essence implementing an inno
 
 ## Implementation
 
-Basically, the app connects to **Last.fm** data for similarity computation with their (more or less) RESTful web service API via JSONP. In addition to that, **Spotify**'s desktop client [plugin apps](https://developer.spotify.com/technologies/apps/) JS API is used pretty heavily. The graphics are rendered as interactive SVG through **Raphaël.js**. Plus, **Backbone.js** is applied as a mean to improve structure and, consequently, maintainability of the app. For layouting the animated visualization itself a force-based [spring graph](http://en.wikipedia.org/wiki/Force-based_algorithms_%28graph_drawing%29) algorithm implementation is employed which was orginally written within Google's Caja project and now adapted for the specific use case here.
+Basically, the app connects to **Last.fm** data for similarity computation with their (more or less) RESTful web service API via JSONP. In addition to that, **Spotify**'s desktop client [plugin apps](https://developer.spotify.com/technologies/apps/) JS API is used pretty heavily. The graphics are rendered as interactive SVG through **Raphaël.js**. Plus, **Backbone.js** is applied as a mean to improve structure and, consequently, maintainability of the app. For layouting the animated visualization itself a force-directed [spring graph](http://en.wikipedia.org/wiki/Force-based_algorithms_%28graph_drawing%29) algorithm implementation is employed which was orginally written within Google's Caja project and now adapted for the specific use case here.
 
 
 ## Functionality
