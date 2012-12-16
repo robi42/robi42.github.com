@@ -6,7 +6,7 @@ comments: true
 categories: Datavis Howto
 ---
 
-Here're some tips for conveniently generating automated app stats from MySQL data.
+Here're some tips for conveniently generating automated visual app stats from MySQL data.
 
 Recommended toolchain:
 
