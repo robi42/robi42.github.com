@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Thesis | Robi's Blog]]></title>
+  <link href="http://robi42.github.com/blog/categories/thesis/atom.xml" rel="self"/>
+  <link href="http://robi42.github.com/"/>
+  <updated>2013-03-05T15:32:01+01:00</updated>
+  <id>http://robi42.github.com/</id>
+  <author>
+    <name><![CDATA[Robert Thurnher]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Proposing a CS Master's Thesis]]></title>
+    <link href="http://robi42.github.com/blog/2013/03/05/proposing-a-cs-masters-thesis/"/>
+    <updated>2013-03-05T15:01:00+01:00</updated>
+    <id>http://robi42.github.com/blog/2013/03/05/proposing-a-cs-masters-thesis</id>
+    <content type="html"><![CDATA[<p>While having some years of interesting and challenging work (see <a href="http://dl.dropbox.com/u/194129/cv_rthurnher.pdf">CV</a>...) I'm currently finally getting around to finishing my master's of computer science for good.</p>
+
+<p>Here's its official thesis <a href="http://dl.dropbox.com/u/194129/proposal.pdf">topic proposal</a> and the <a href="http://www.cvast.tuwien.ac.at/cvast">research centre</a> where it's run.</p>
+
+<p>TBC (hopefully). :)</p>
+]]></content>
+  </entry>
+  
+</feed>

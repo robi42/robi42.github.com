@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-02-27T11:44:18+01:00</updated>
+  <updated>2013-03-05T15:32:01+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proposing a CS Master's Thesis]]></title>
+    <link href="http://robi42.github.com/blog/2013/03/05/proposing-a-cs-masters-thesis/"/>
+    <updated>2013-03-05T15:01:00+01:00</updated>
+    <id>http://robi42.github.com/blog/2013/03/05/proposing-a-cs-masters-thesis</id>
+    <content type="html"><![CDATA[<p>While having some years of interesting and challenging work (see <a href="http://dl.dropbox.com/u/194129/cv_rthurnher.pdf">CV</a>&#8230;) I&#8217;m currently finally getting around to finishing my master&#8217;s of computer science for good.</p>
+
+<p>Here&#8217;s its official thesis <a href="http://dl.dropbox.com/u/194129/proposal.pdf">topic proposal</a> and the <a href="http://www.cvast.tuwien.ac.at/cvast">research centre</a> where it&#8217;s run.</p>
+
+<p>TBC (hopefully). :)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Zen of Python]]></title>
