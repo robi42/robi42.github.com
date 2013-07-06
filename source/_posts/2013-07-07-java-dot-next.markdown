@@ -15,11 +15,11 @@ Especially, since [Lombok](http://projectlombok.org/) takes a lot of the general
 Also, [Guava](https://code.google.com/p/guava-libraries/wiki/GuavaExplained) does a truly good job in enabling one to write more concise and robust code.
 
 Plus, Java 7 brought at least some nice, welcome improvements in<br>
-&rarr; try-with-resources, exceptions multi-catch, etc.
+&rarr; `try-with-resources`, exceptions `multi-catch`, etc.
 
 Finally, modern DI with Spring 3+ (or Guice) using `javax.inject` frees one from most needs for XML config and, after all, there still has to come a build system beating Maven.
 
-So namely, here's a personal wish list FTW:
+So namely, here's a **personal wish list FTW**:
 
  * Pretty much everything [coming up in Java 8](http://www.techempower.com/blog/2013/03/26/everything-about-java-8/) (sooner than later, hopefully) -- particularly **lambdas** (at last...)
  * More type inference (which the JVM is totally capable of); Java 7's diamond operator's definetely a good start there but, please, let me write `val foos = ...` (like in Scala...)
