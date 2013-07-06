@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-07-07T01:45:40+02:00</updated>
+  <updated>2013-07-07T01:47:46+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -27,11 +27,11 @@
 <p>Also, <a href="https://code.google.com/p/guava-libraries/wiki/GuavaExplained">Guava</a> does a truly good job in enabling one to write more concise and robust code.</p>
 
 <p>Plus, Java 7 brought at least some nice, welcome improvements in<br>
-&rarr; try-with-resources, exceptions multi-catch, etc.</p>
+&rarr; <code>try-with-resources</code>, exceptions <code>multi-catch</code>, etc.</p>
 
 <p>Finally, modern DI with Spring 3+ (or Guice) using <code>javax.inject</code> frees one from most needs for XML config and, after all, there still has to come a build system beating Maven.</p>
 
-<p>So namely, here's a personal wish list FTW:</p>
+<p>So namely, here's a <strong>personal wish list FTW</strong>:</p>
 
 <ul>
 <li>Pretty much everything <a href="http://www.techempower.com/blog/2013/03/26/everything-about-java-8/">coming up in Java 8</a> (sooner than later, hopefully) -- particularly <strong>lambdas</strong> (at last...)</li>
