@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-03-05T19:14:23+01:00</updated>
+  <updated>2013-07-07T01:45:40+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Java.next?]]></title>
+    <link href="http://robi42.github.com/blog/2013/07/07/java-dot-next/"/>
+    <updated>2013-07-07T00:17:00+02:00</updated>
+    <id>http://robi42.github.com/blog/2013/07/07/java-dot-next</id>
+    <content type="html"><![CDATA[<p>After several years of programming Java while always keeping an eye on alternatives around, I&#8217;ve finally come to the conclusion:</p>
+
+<p>Actually, there are just a few things missing in the language by now which would make me a <em>happy camper</em>&#8482; indeed.</p>
+
+<p>Especially, since <a href="http://projectlombok.org/">Lombok</a> takes a lot of the general boilerplate code PITA away here (with useful features like convenient property accessors, <code>hashCode/equals/toString</code> impl., logging facility injection, &#8230;).</p>
+
+<p>Also, <a href="https://code.google.com/p/guava-libraries/wiki/GuavaExplained">Guava</a> does a truly good job in enabling one to write more concise and robust code.</p>
+
+<p>Plus, Java 7 brought at least some nice, welcome improvements in<br>
+&rarr; try-with-resources, exceptions multi-catch, etc.</p>
+
+<p>Finally, modern DI with Spring 3+ (or Guice) using <code>javax.inject</code> frees one from most needs for XML config and, after all, there still has to come a build system beating Maven.</p>
+
+<p>So namely, here&#8217;s a personal wish list FTW:</p>
+
+<ul>
+<li>Pretty much everything <a href="http://www.techempower.com/blog/2013/03/26/everything-about-java-8/">coming up in Java 8</a> (sooner than later, hopefully) &#8211; particularly <strong>lambdas</strong> (at last&#8230;)</li>
+<li>More type inference (which the JVM is totally capable of); Java 7&#8217;s diamond operator&#8217;s definetely a good start there but, please, let me write <code>val foos = ...</code> (like in Scala&#8230;)</li>
+<li>Collection literals a lá Python or C#, something like this would be really sweet:</li>
+</ul>
+
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'>     <span class="c1">// Possibly, even without explicit generics declaration ;)</span>
+</span><span class='line'>     <span class="n">val</span> <span class="n">foo</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LiteralHashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;{</span><span class="s">&quot;bar&quot;</span><span class="o">:</span> <span class="s">&quot;baz&quot;</span><span class="o">};</span>
+</span><span class='line'>     <span class="n">foo</span><span class="o">[</span><span class="s">&quot;bar&quot;</span><span class="o">]</span> <span class="o">=</span> <span class="s">&quot;qux&quot;</span><span class="o">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Pretty please. :)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proposing a CS Master's Thesis]]></title>
