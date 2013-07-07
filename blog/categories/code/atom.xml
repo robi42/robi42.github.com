@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-07-07T14:50:46+02:00</updated>
+  <updated>2013-07-07T14:57:27+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -61,7 +61,7 @@
 <p>Pretty please. :)</p>
 
 <p>PS: literal multiline strings, and so on and so forth, could be nice (but I can live without).
-PPS: wouldn't say no to optionally named (and default) function param args, though.</p>
+PPS: wouldn't say no to optionally named function param args, though.</p>
 ]]></content>
   </entry>
   
