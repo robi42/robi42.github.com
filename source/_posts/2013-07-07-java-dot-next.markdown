@@ -23,7 +23,7 @@ So namely, here's a **personal wish list FTW**:
 
  * Pretty much everything [coming up with Java/JDK 8](http://www.techempower.com/blog/2013/03/26/everything-about-java-8/) (sooner than later, hopefully) -- particularly **lambdas** (at last...)
  * More **type inference** (which the JVM is totally capable of); Java 7's diamond operator's definitely a good start there but, please, let me write `val foos = ...` (like in Scala...)
- * **Collection literals** a lá Python or C#, something like this would be really sweet:
+ * **Collection literals** à la Python or C#, something like this would be really sweet:
 
 {% codeblock lang:java %}
      // Possibly, even without explicit generics declaration ;)
@@ -34,4 +34,4 @@ So namely, here's a **personal wish list FTW**:
 Pretty please. :)
 
 PS: literal multiline strings, and so on and so forth, could be nice (but I can live without).
-PPS: wouldn't say no to optionally named function/constructor params, though.
+PPS: wouldn't say no to optionally named function/constructor args, though.
