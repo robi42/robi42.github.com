@@ -6,7 +6,7 @@ comments: true
 categories: Programming Code
 ---
 
-After several years of programming Java while always keeping an eye on alternatives around, I've finally come to the conclusion: 
+After several years of programming Java while always keeping an eye on alternatives around, I've recently come to the conclusion: 
 
 Actually, there are just a few things missing in the language by now which would make me a *happy camper*&#8482; indeed (enjoying its mature ecosystem of libraries and tools).
 
