@@ -8,7 +8,7 @@ categories: Programming Code
 
 After several years of programming Java while always keeping an eye on alternatives around, I've recently come to the conclusion: 
 
-Actually, there are just a few things still missing in the language these days which would make me a *happy camper*&#8482; indeed (enjoying its mature ecosystem of libraries and tools).
+Actually, there are just a few things still missing in the language these days which would render me a *happy camper*&#8482; indeed (enjoying its mature ecosystem of libraries & tools).
 
 Especially, since [Lombok](http://projectlombok.org/) takes a lot of the general boilerplate code PITA away here (with useful features like convenient property accessors, `hashCode/equals/toString` impl., logging facility injection, ...).
 
@@ -21,8 +21,8 @@ Finally, modern DI with Spring 3+ (or Guice) using `javax.inject.*` frees one fr
 
 So namely, here's a **personal wish list FTW**:
 
- * Pretty much everything [coming up in Java/JDK 8](http://www.techempower.com/blog/2013/03/26/everything-about-java-8/) (sooner than later, hopefully) -- particularly **lambdas** (at last...)
- * More **type inference** (which the JVM is totally capable of); Java 7's diamond operator's definetely a good start there but, please, let me write `val foos = ...` (like in Scala...)
+ * Pretty much everything [coming up with Java/JDK 8](http://www.techempower.com/blog/2013/03/26/everything-about-java-8/) (sooner than later, hopefully) -- particularly **lambdas** (at last...)
+ * More **type inference** (which the JVM is totally capable of); Java 7's diamond operator's definitely a good start there but, please, let me write `val foos = ...` (like in Scala...)
  * **Collection literals** a lá Python or C#, something like this would be really sweet:
 
 {% codeblock lang:java %}
@@ -34,3 +34,4 @@ So namely, here's a **personal wish list FTW**:
 Pretty please. :)
 
 PS: literal multiline strings, and so on and so forth, could be nice (but I can live without).
+PPS: wouldn't say no to optionally named (and default) function param args, though.
