@@ -34,4 +34,4 @@ So namely, here's a **personal wish list FTW**:
 Pretty please. :)
 
 PS: literal multiline strings, and so on and so forth, could be nice (but I can live without).
-PPS: wouldn't say no to optionally named (and default) function param args, though.
+PPS: wouldn't say no to optionally named function param args, though.
