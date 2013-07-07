@@ -8,7 +8,7 @@ categories: Programming Code
 
 After several years of programming Java while always keeping an eye on alternatives around, I've finally come to the conclusion: 
 
-Actually, there are just a few things missing in the language by now which would make me a *happy camper*&#8482; indeed.
+Actually, there are just a few things missing in the language by now which would make me a *happy camper*&#8482; indeed (enjoying its mature ecosystem of libraries and tools).
 
 Especially, since [Lombok](http://projectlombok.org/) takes a lot of the general boilerplate code PITA away here (with useful features like convenient property accessors, `hashCode/equals/toString` impl., logging facility injection, ...).
 
