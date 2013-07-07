@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-07-07T02:18:44+02:00</updated>
+  <updated>2013-07-07T02:26:16+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -50,6 +50,8 @@
 
 
 <p>Pretty please. :)</p>
+
+<p>PS: literal multi-line strings, and so on, and so forth, could be nice as well (but I can live without)</p>
 ]]></content>
   </entry>
   
