@@ -32,3 +32,5 @@ So namely, here's a **personal wish list FTW**:
 {% endcodeblock %}
 
 Pretty please. :)
+
+PS: literal multi-line strings, and so on, and so forth, could be nice as well (but I can live without)
