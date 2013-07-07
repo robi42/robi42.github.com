@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-07-07T03:04:54+02:00</updated>
+  <updated>2013-07-07T03:11:39+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -20,7 +20,7 @@
     <id>http://robi42.github.com/blog/2013/07/07/java-dot-next</id>
     <content type="html"><![CDATA[<p>After several years of programming Java while always keeping an eye on alternatives around, I've recently come to the conclusion:</p>
 
-<p>Actually, there are just a few things missing in the language by now which would make me a <em>happy camper</em>&#8482; indeed (enjoying its mature ecosystem of libraries and tools).</p>
+<p>Actually, there are just a few things still missing in the language these days which would make me a <em>happy camper</em>&#8482; indeed (enjoying its mature ecosystem of libraries and tools).</p>
 
 <p>Especially, since <a href="http://projectlombok.org/">Lombok</a> takes a lot of the general boilerplate code PITA away here (with useful features like convenient property accessors, <code>hashCode/equals/toString</code> impl., logging facility injection, ...).</p>
 
@@ -29,7 +29,7 @@
 <p>Plus, Java 7 brought at least some nice, welcome improvements in<br>
 &rarr; <code>try-with-resources</code>, exceptions <code>multi-catch</code>, etc.</p>
 
-<p>Finally, modern DI with Spring 3+ (or Guice) using <code>javax.inject.*</code> frees one from most needs for XML config and, after all, there still has to come a build system beating Maven.</p>
+<p>Finally, modern DI with Spring 3+ (or Guice) using <code>javax.inject.*</code> frees one from most needs for XML config and, after all, there yet has to come a build system beating Maven.</p>
 
 <p>So namely, here's a <strong>personal wish list FTW</strong>:</p>
 
