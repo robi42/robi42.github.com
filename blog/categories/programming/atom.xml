@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Programming | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-07-07T03:11:39+02:00</updated>
+  <updated>2013-07-07T03:15:48+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -29,7 +29,7 @@
 <p>Plus, Java 7 brought at least some nice, welcome improvements in<br>
 &rarr; <code>try-with-resources</code>, exceptions <code>multi-catch</code>, etc.</p>
 
-<p>Finally, modern DI with Spring 3+ (or Guice) using <code>javax.inject.*</code> frees one from most needs for XML config and, after all, there yet has to come a build system beating Maven.</p>
+<p>Finally, modern DI with Spring 3+ (or Guice) using <code>javax.inject.*</code> frees one from most needs for XML config and, after all, a build sys beating Maven for real has yet to come.</p>
 
 <p>So namely, here's a <strong>personal wish list FTW</strong>:</p>
 
