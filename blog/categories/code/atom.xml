@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-07-07T02:36:09+02:00</updated>
+  <updated>2013-07-07T02:54:26+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -18,7 +18,7 @@
     <link href="http://robi42.github.com/blog/2013/07/07/java-dot-next/"/>
     <updated>2013-07-07T00:17:00+02:00</updated>
     <id>http://robi42.github.com/blog/2013/07/07/java-dot-next</id>
-    <content type="html"><![CDATA[<p>After several years of programming Java while always keeping an eye on alternatives around, I've finally come to the conclusion:</p>
+    <content type="html"><![CDATA[<p>After several years of programming Java while always keeping an eye on alternatives around, I've recently come to the conclusion:</p>
 
 <p>Actually, there are just a few things missing in the language by now which would make me a <em>happy camper</em>&#8482; indeed (enjoying its mature ecosystem of libraries and tools).</p>
 
