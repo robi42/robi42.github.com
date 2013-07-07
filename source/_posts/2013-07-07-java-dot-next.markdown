@@ -21,7 +21,7 @@ Finally, modern DI with Spring 3+ (or Guice) using `javax.inject.*` frees one fr
 
 So namely, here's a **personal wish list FTW**:
 
- * Pretty much everything [coming up in Java 8](http://www.techempower.com/blog/2013/03/26/everything-about-java-8/) (sooner than later, hopefully) -- particularly **lambdas** (at last...)
+ * Pretty much everything [coming up in Java/JDK 8](http://www.techempower.com/blog/2013/03/26/everything-about-java-8/) (sooner than later, hopefully) -- particularly **lambdas** (at last...)
  * More **type inference** (which the JVM is totally capable of); Java 7's diamond operator's definetely a good start there but, please, let me write `val foos = ...` (like in Scala...)
  * **Collection literals** a lá Python or C#, something like this would be really sweet:
 
