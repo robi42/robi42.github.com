@@ -17,7 +17,7 @@ Also, [Guava](https://code.google.com/p/guava-libraries/wiki/GuavaExplained) doe
 Plus, Java 7 brought at least some nice, welcome improvements in<br>
 &rarr; `try-with-resources`, exceptions `multi-catch`, etc.
 
-Finally, modern DI with Spring 3+ (or Guice) using `javax.inject.*` frees one from most needs for XML config and, after all, there yet has to come a build system beating Maven.
+Finally, modern DI with Spring 3+ (or Guice) using `javax.inject.*` frees one from most needs for XML config and, after all, a build sys beating Maven for real has yet to come.
 
 So namely, here's a **personal wish list FTW**:
 
