@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-07-08T13:02:51+02:00</updated>
+  <updated>2013-07-14T14:50:52+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -27,9 +27,9 @@
 <p>Also, <a href="https://code.google.com/p/guava-libraries/wiki/GuavaExplained">Guava</a> does a truly good job in enabling one to write more concise and robust code.</p>
 
 <p>Plus, Java 7 brought at least some nice, welcome <a href="http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html#changes">improvements</a> in<br>
-&rarr; <code>try-with-resources</code>, exceptions <code>multi-catch</code>, etc.</p>
+&rarr; <code>try-with-resources</code>, exceptions <code>multicatch</code>, etc.</p>
 
-<p>Finally, modern DI with Spring 3+ (or Guice) using <code>javax.inject.*</code> frees one from most needs for XML config and, after all, a build sys beating Maven for real has yet to come.</p>
+<p>Finally, modern <a href="http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection">DI</a> with Spring 3+ (or Guice) using <code>javax.inject.*</code> frees one from most needs for XML config and, after all, a build sys beating Maven for real has yet to come.</p>
 
 <p>So namely, here&#8217;s a <strong>personal wish list FTW</strong>:</p>
 
