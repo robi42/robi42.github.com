@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2013-09-15T22:06:38+02:00</updated>
+  <updated>2014-04-14T00:05:27+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Boot REST]]></title>
+    <link href="http://robi42.github.com/blog/2014/04/13/boot-rest/"/>
+    <updated>2014-04-13T23:38:00+02:00</updated>
+    <id>http://robi42.github.com/blog/2014/04/13/boot-rest</id>
+    <content type="html"><![CDATA[<p>Here&#8217;s a little sort of template toy project regarding contemporary JVM-based REST APIs powering HTML5/JS SPAs: <br>
+<a href="https://github.com/robi42/boot-rest">https://github.com/robi42/boot-rest</a></p>
+
+<p>Built with JDK 8, Spring Boot, Elasticsearch, Jersey 2, Gradle, Yeoman, Bootstrap, AngularJS, fun, and all that jazz&#8230;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Java.next?]]></title>
