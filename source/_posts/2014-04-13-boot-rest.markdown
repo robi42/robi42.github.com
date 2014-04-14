@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Boot REST"
+date: 2014-04-13 23:38
+comments: true
+categories: Code
+---
+
+Here's a little sort of template toy project regarding contemporary JVM-based REST APIs powering HTML5/JS SPAs: <br>
+<https://github.com/robi42/boot-rest>
+
+Built with JDK 8, Spring Boot, Elasticsearch, Jersey 2, Gradle, Yeoman, Bootstrap, AngularJS, fun, and all that jazz...
