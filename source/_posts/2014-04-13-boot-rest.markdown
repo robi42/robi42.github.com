@@ -11,4 +11,4 @@ Here's a little sort of template toy project regarding contemporary JVM-based RE
 
 Built with JDK 8, Spring Boot, Elasticsearch, Jersey 2, Gradle, Yeoman, Bootstrap, AngularJS, fun, and all that jazz...
 
-PS: look ma, no XML! ;)
+PS: look ma, no XML! (well, almost) ;)
