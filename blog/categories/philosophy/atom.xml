@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Philosophy | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/philosophy/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2014-09-26T01:31:31+02:00</updated>
+  <updated>2014-09-28T15:02:03+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -18,19 +18,35 @@
     <link href="http://robi42.github.com/blog/2013/02/27/the-zen-of-python/"/>
     <updated>2013-02-27T11:21:00+01:00</updated>
     <id>http://robi42.github.com/blog/2013/02/27/the-zen-of-python</id>
-    <content type="html"><![CDATA[<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;<span class="nv">$ </span>python -c <span class="s1">&#39;import this&#39;</span>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+    <content type="html"><![CDATA[<p>{% codeblock lang:sh %}</p>
 
-<p><blockquote><p></p></p><p><p>Beautiful is better than ugly.<br/>Explicit is better than implicit.<br/>Simple is better than complex.<br/>Complex is better than complicated.<br/>Flat is better than nested.<br/>Sparse is better than dense.<br/>Readability counts.<br/>Special cases aren't special enough to break the rules.<br/>Although practicality beats purity.<br/>Errors should never pass silently.<br/>Unless explicitly silenced.<br/>In the face of ambiguity, refuse the temptation to guess.<br/>There should be one-- and preferably only one --obvious way to do it.<br/>Although that way may not be obvious at first unless you're Dutch.<br/>Now is better than never.<br/>Although never is often better than <em>right</em> now.<br/>If the implementation is hard to explain, it's a bad idea.<br/>If the implementation is easy to explain, it may be a good idea.<br/>Namespaces are one honking great idea -- let's do more of those!</p></p><p><p></p><footer><strong>Tim Peters</strong> <cite><a href='http://www.python.org/dev/peps/pep-0020/'>PEP 20</a></cite></footer></blockquote></p>
+<p>$ python -c 'import this'</p>
+
+<p>{% endcodeblock %}</p>
+
+<p>{% blockquote Tim Peters http://www.python.org/dev/peps/pep-0020/ PEP 20 %}</p>
+
+<p>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than <em>right</em> now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!</p>
+
+<p>{% endblockquote %}</p>
 ]]></content>
   </entry>
   
