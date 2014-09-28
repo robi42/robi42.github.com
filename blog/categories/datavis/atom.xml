@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Datavis | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/datavis/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2014-09-28T15:02:03+02:00</updated>
+  <updated>2014-09-28T15:02:11+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -31,110 +31,215 @@
 
 <p>Corresponding code bits to get one started:</p>
 
-<p>{% codeblock Simplified R script lang:r %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Simplified R script  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>!<span class="o">/</span>usr<span class="o">/</span>bin<span class="o">/</span>Rscript<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>install.packages<span class="p">(</span><span class="s">&#39;RMySQL&#39;</span><span class="p">)</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>install.packages<span class="p">(</span><span class="s">&#39;ggplot2&#39;</span><span class="p">)</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>library<span class="p">(</span>RMySQL<span class="p">)</span>
+</span><span class='line'>library<span class="p">(</span>ggplot2<span class="p">)</span>
+</span><span class='line'>library<span class="p">(</span>grid<span class="p">)</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>PNG layout of plots helper.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>vplayout <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">,</span> y<span class="p">)</span> viewport<span class="p">(</span>layout.pos.row<span class="o">=</span>x<span class="p">,</span> layout.pos.col<span class="o">=</span>y<span class="p">)</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>Connect to DB.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>dbUsername <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;some_user&#39;</span>
+</span><span class='line'>dbPassword <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;some_password&#39;</span>
+</span><span class='line'>dbName     <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;app_stats_snapshot&#39;</span>
+</span><span class='line'>dbHost     <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;localhost&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>dbConnection <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> dbConnect<span class="p">(</span>MySQL<span class="p">(),</span> user<span class="o">=</span>dbUsername<span class="p">,</span> password<span class="o">=</span>dbPassword<span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>pre<span class="o">&gt;&lt;</span>code<span class="o">&gt;</span>                      dbname<span class="o">=</span>dbName<span class="p">,</span> host<span class="o">=</span>dbHost<span class="p">)</span>
+</span><span class='line'><span class="o">&lt;/</span>code<span class="o">&gt;&lt;/</span>pre<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>Exemplary queries.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>recordsPerDayQuery <span class="o">&lt;-</span>
+</span><span class='line'>  <span class="s">&#39;select date(created_at) as Day, count(*) as Count from records where created_at &gt;= &quot;2012-1-1&quot; and date(created_at) &amp;lt; date(now()) group by Day&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>otherRecordsPerDayQuery <span class="o">&lt;-</span>
+</span><span class='line'>  <span class="s">&#39;select date(created_at) as Day, count(*) as Count from other_records where created_at &gt;= &quot;2012-1-1&quot; and date(created_at) &amp;lt; date(now()) group by Day&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="m">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>Query data and plot charts.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>d1 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> recordsPerDayQuery<span class="p">)</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>xlabText <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;2012&#39;</span><span class="p">;</span> ylabText <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;Count&#39;</span>
+</span><span class='line'>Records <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> d1<span class="p">$</span>Count
+</span><span class='line'>heading1 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;Records per Day&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>plot1 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d1<span class="p">$</span>Day<span class="p">),</span> d1<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Records<span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>pre<span class="o">&gt;&lt;</span>code<span class="o">&gt;</span>           main<span class="o">=</span>heading1<span class="p">,</span> xlab<span class="o">=</span>xlabText<span class="p">,</span> ylab<span class="o">=</span>ylabText<span class="p">)</span>
+</span><span class='line'><span class="o">&lt;/</span>code<span class="o">&gt;&lt;/</span>pre<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>d2 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> otherRecordsPerDayQuery<span class="p">)</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>Other <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> d2<span class="p">$</span>Count
+</span><span class='line'>heading2 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;Other Records per Day&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>plot2 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="p">$</span>Day<span class="p">),</span> d2<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>pre<span class="o">&gt;&lt;</span>code<span class="o">&gt;</span>           main<span class="o">=</span>heading2<span class="p">,</span> xlab<span class="o">=</span><span class="s">&#39;2012&#39;</span><span class="p">,</span> ylab<span class="o">=</span><span class="s">&#39;Count&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="o">&lt;/</span>code<span class="o">&gt;&lt;/</span>pre<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="m">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>Write data tables to mail text file.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>mailTextFilename <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;/path/to/stats-mail.txt&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>cat<span class="p">(</span>paste<span class="p">(</span><span class="s">&#39;Hi,\n\n#&#39;</span><span class="p">,</span> heading1<span class="p">,</span> <span class="s">&#39;\n&#39;</span><span class="p">),</span> file<span class="o">=</span>mailTextFilename<span class="p">)</span>
+</span><span class='line'>write.table<span class="p">(</span>d1<span class="p">,</span> file<span class="o">=</span>mailTextFilename<span class="p">,</span> append<span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>pre<span class="o">&gt;&lt;</span>code<span class="o">&gt;</span>        row.names<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> quote<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&#39; | &#39;</span><span class="p">)</span>
+</span><span class='line'><span class="o">&lt;/</span>code<span class="o">&gt;&lt;/</span>pre<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>cat<span class="p">(</span>paste<span class="p">(</span><span class="s">&#39;\n#&#39;</span><span class="p">,</span> heading2<span class="p">,</span> <span class="s">&#39;\n&#39;</span><span class="p">),</span> file<span class="o">=</span>mailTextFilename<span class="p">,</span> append<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+</span><span class='line'>write.table<span class="p">(</span>d2<span class="p">,</span> file<span class="o">=</span>mailTextFilename<span class="p">,</span> append<span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>pre<span class="o">&gt;&lt;</span>code<span class="o">&gt;</span>        row.names<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> quote<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&#39; | &#39;</span><span class="p">)</span>
+</span><span class='line'><span class="o">&lt;/</span>code<span class="o">&gt;&lt;/</span>pre<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="m">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>Make PNG with plotted charts.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>png<span class="p">(</span><span class="s">&#39;/path/to/stats.png&#39;</span><span class="p">,</span> width<span class="o">=</span><span class="m">1024</span><span class="p">,</span> height<span class="o">=</span><span class="m">768</span><span class="p">)</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>grid.newpage<span class="p">()</span>
+</span><span class='line'>pushViewport<span class="p">(</span>viewport<span class="p">(</span>layout<span class="o">=</span>grid.layout<span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">)))</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>print<span class="p">(</span>plot1<span class="p">,</span> vp<span class="o">=</span>vplayout<span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
+</span><span class='line'>print<span class="p">(</span>plot2<span class="p">,</span> vp<span class="o">=</span>vplayout<span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="m">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>dev.off<span class="p">()</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<h1>!/usr/bin/Rscript</h1>
-
-<h1>install.packages('RMySQL')</h1>
-
-<h1>install.packages('ggplot2')</h1>
-
-<p>library(RMySQL)
-library(ggplot2)
-library(grid)</p>
-
-<h1>PNG layout of plots helper.</h1>
-
-<p>vplayout &lt;- function(x, y) viewport(layout.pos.row=x, layout.pos.col=y)</p>
-
-<h1>Connect to DB.</h1>
-
-<p>dbUsername &lt;- 'some_user'
-dbPassword &lt;- 'some_password'
-dbName     &lt;- 'app_stats_snapshot'
-dbHost     &lt;- 'localhost'</p>
-
-<p>dbConnection &lt;- dbConnect(MySQL(), user=dbUsername, password=dbPassword,</p>
-
-<pre><code>                      dbname=dbName, host=dbHost)
-</code></pre>
-
-<h1>Exemplary queries.</h1>
-
-<p>recordsPerDayQuery <-
-  'select date(created_at) as Day, count(*) as Count from records where created_at >= "2012-1-1" and date(created_at) &lt; date(now()) group by Day'</p>
-
-<p>otherRecordsPerDayQuery <-
-  'select date(created_at) as Day, count(*) as Count from other_records where created_at >= "2012-1-1" and date(created_at) &lt; date(now()) group by Day'</p>
-
-<h1>...</h1>
-
-<h1>Query data and plot charts.</h1>
-
-<p>d1 &lt;- dbGetQuery(dbConnection, recordsPerDayQuery)</p>
-
-<p>xlabText &lt;- '2012'; ylabText &lt;- 'Count'
-Records &lt;- d1$Count
-heading1 &lt;- 'Records per Day'</p>
-
-<p>plot1 &lt;- qplot(as.Date(d1$Day), d1$Count, geom='line', color=Records,</p>
-
-<pre><code>           main=heading1, xlab=xlabText, ylab=ylabText)
-</code></pre>
-
-<p>d2 &lt;- dbGetQuery(dbConnection, otherRecordsPerDayQuery)</p>
-
-<p>Other &lt;- d2$Count
-heading2 &lt;- 'Other Records per Day'</p>
-
-<p>plot2 &lt;- qplot(as.Date(d2$Day), d2$Count, geom='line', color=Other,</p>
-
-<pre><code>           main=heading2, xlab='2012', ylab='Count')
-</code></pre>
-
-<h1>...</h1>
-
-<h1>Write data tables to mail text file.</h1>
-
-<p>mailTextFilename &lt;- '/path/to/stats-mail.txt'</p>
-
-<p>cat(paste('Hi,\n\n#', heading1, '\n'), file=mailTextFilename)
-write.table(d1, file=mailTextFilename, append=TRUE,</p>
-
-<pre><code>        row.names=FALSE, quote=FALSE, sep=' | ')
-</code></pre>
-
-<p>cat(paste('\n#', heading2, '\n'), file=mailTextFilename, append=TRUE)
-write.table(d2, file=mailTextFilename, append=TRUE,</p>
-
-<pre><code>        row.names=FALSE, quote=FALSE, sep=' | ')
-</code></pre>
-
-<h1>...</h1>
-
-<h1>Make PNG with plotted charts.</h1>
-
-<p>png('/path/to/stats.png', width=1024, height=768)</p>
-
-<p>grid.newpage()
-pushViewport(viewport(layout=grid.layout(2, 1)))</p>
-
-<p>print(plot1, vp=vplayout(1, 1))
-print(plot2, vp=vplayout(2, 1))</p>
-
-<h1>...</h1>
-
-<p>dev.off()</p>
-
-<p>{% endcodeblock %}</p>
-
-<p>{% codeblock Related crontab sending stats mail once per week lang:bash %}</p>
-
-<h1>m h  dom mon dow   command</h1>
-
-<p>30 4 * * 1 /path/to/stats.r
-0  5 * * 1 mailx -s '[Example] Stats' -a /path/to/stats.png stats@example.com &lt; /path/to/stats-mail.txt
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Related crontab sending stats mail once per week  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;m h  dom mon dow   <span class="nb">command</span>&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;30 4 * * 1 /path/to/stats.r
+</span><span class='line'>0  5 * * 1 mailx -s <span class="s1">&#39;[Example] Stats&#39;</span> -a /path/to/stats.png stats@example.com &amp;lt; /path/to/stats-mail.txt
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>HTH.</p>
 ]]></content>

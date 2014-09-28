@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2014-09-28T15:02:03+02:00</updated>
+  <updated>2014-09-28T15:02:11+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -54,14 +54,23 @@
 </ul>
 
 
-<p>{% codeblock lang:java %}</p>
-
-<pre><code> // Possibly, even without explicit generics declaration ;)
- val foo = new LiteralHashMap&lt;String, String&gt;{"bar": "baz"};
- foo["bar"] = "qux";
-</code></pre>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span> <span class="c1">// Possibly, even without explicit generics declaration ;)</span>
+</span><span class='line'> <span class="n">val</span> <span class="n">foo</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LiteralHashMap</span><span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&amp;</span><span class="n">gt</span><span class="o">;{</span><span class="s">&quot;bar&quot;</span><span class="o">:</span> <span class="s">&quot;baz&quot;</span><span class="o">};</span>
+</span><span class='line'> <span class="n">foo</span><span class="o">[</span><span class="s">&quot;bar&quot;</span><span class="o">]</span> <span class="o">=</span> <span class="s">&quot;qux&quot;</span><span class="o">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Pretty please. :)</p>
 
@@ -87,62 +96,110 @@ PPS: wouldn't say no to optionally named function/constructor args, though.</p>
 
 <p>Here's some demo code (which is loosely based on samples from the recommendable book <a href="http://shop.oreilly.com/product/0636920024002.do">"Mobile Development with C#"</a>) showing how mentioned shared layers could benefit:</p>
 
-<p>{% codeblock Simple model lang:csharp %}
-public class Tweet
-{</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Simple model  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Tweet</span>
+</span><span class='line'><span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="k">public</span> <span class="kt">long</span>     <span class="n">Id</span>        <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="n">DateTime</span> <span class="n">CreatedAt</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">string</span>   <span class="n">Text</span>      <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<pre><code>public long     Id        { get; set; }
-public DateTime CreatedAt { get; set; }
-public string   Text      { get; set; }
-</code></pre>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Simple REST API client  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">TwitterApiClient</span>
+</span><span class='line'><span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="k">const</span> <span class="kt">string</span> <span class="n">BaseUrl</span> <span class="p">=</span> <span class="s">&quot;https://api.twitter.com/1/statuses/&quot;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">DoWithTweetsForUser</span><span class="p">(</span><span class="kt">string</span> <span class="n">username</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IList</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">Tweet</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">callback</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="kt">var</span> <span class="n">webClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">WebClient</span><span class="p">();</span>
+</span><span class='line'>    <span class="kt">var</span> <span class="n">url</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&quot;{0}user_timeline.json?screen_name={1}&quot;</span><span class="p">,</span>
+</span><span class='line'>                            <span class="n">BaseUrl</span><span class="p">,</span> <span class="n">Uri</span><span class="p">.</span><span class="n">EscapeUriString</span><span class="p">(</span><span class="n">username</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">webClient</span><span class="p">.</span><span class="n">DownloadStringCompleted</span> <span class="p">+=</span> <span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="p">{</span>
+</span><span class='line'>        <span class="kt">var</span> <span class="n">tweets</span> <span class="p">=</span> <span class="p">(</span><span class="k">from</span> <span class="n">element</span> <span class="k">in</span> <span class="n">JsonValue</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">Result</span><span class="p">)</span> <span class="k">as</span> <span class="n">JsonArray</span>
+</span><span class='line'>            <span class="n">let</span> <span class="n">tweetData</span> <span class="p">=</span> <span class="n">element</span> <span class="k">as</span> <span class="n">JsonObject</span>
+</span><span class='line'>            <span class="k">select</span> <span class="k">new</span> <span class="n">Tweet</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">Id</span>        <span class="p">=</span> <span class="n">tweetData</span><span class="p">[</span><span class="s">&quot;id&quot;</span><span class="p">],</span>
+</span><span class='line'>                <span class="n">CreatedAt</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">ParseExact</span><span class="p">(</span><span class="n">tweetData</span><span class="p">[</span><span class="s">&quot;created_at&quot;</span><span class="p">],</span>
+</span><span class='line'>                                <span class="s">&quot;ddd MMM dd HH:mm:ss zz00 yyyy&quot;</span><span class="p">,</span> <span class="k">null</span><span class="p">),</span>
+</span><span class='line'>                <span class="n">Text</span>      <span class="p">=</span> <span class="n">tweetData</span><span class="p">[</span><span class="s">&quot;text&quot;</span><span class="p">],</span>
+</span><span class='line'>            <span class="p">})</span>
+</span><span class='line'>            <span class="p">.</span><span class="n">ToList</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">callback</span><span class="p">(</span><span class="n">tweets</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">webClient</span><span class="p">.</span><span class="n">DownloadStringAsync</span><span class="p">(</span><span class="k">new</span> <span class="n">Uri</span><span class="p">(</span><span class="n">url</span><span class="p">));</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>}
-{% endcodeblock %}</p>
-
-<p>{% codeblock Simple REST API client lang:csharp %}
-public class TwitterApiClient
-{</p>
-
-<pre><code>const string BaseUrl = "https://api.twitter.com/1/statuses/";
-
-public void DoWithTweetsForUser(string username, Action&lt;IList&lt;Tweet&gt;&gt; callback)
-{
-    var webClient = new WebClient();
-    var url = string.Format("{0}user_timeline.json?screen_name={1}",
-                            BaseUrl, Uri.EscapeUriString(username));
-
-    webClient.DownloadStringCompleted += (sender, e) =&gt; {
-        var tweets = (from element in JsonValue.Parse(e.Result) as JsonArray
-            let tweetData = element as JsonObject
-            select new Tweet {
-                Id        = tweetData["id"],
-                CreatedAt = DateTime.ParseExact(tweetData["created_at"],
-                                "ddd MMM dd HH:mm:ss zz00 yyyy", null),
-                Text      = tweetData["text"],
-            })
-            .ToList();
-
-        callback(tweets);
-    };
-
-    webClient.DownloadStringAsync(new Uri(url));
-}
-</code></pre>
-
-<p>}
-{% endcodeblock %}</p>
-
-<p>{% codeblock Exemplary user code lang:csharp %}
-var apiClient = new TwitterApiClient();</p>
-
-<p>apiClient.DoWithTweetsForUser("robi42", tweets => {</p>
-
-<pre><code>foreach (var tweet in tweets) // Just for demo purpose.
-    Debug.WriteLine("Tweet from {0}: {1}", tweet.CreatedAt, tweet.Text);
-</code></pre>
-
-<p>});
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Exemplary user code  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="kt">var</span> <span class="n">apiClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">TwitterApiClient</span><span class="p">();&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="n">apiClient</span><span class="p">.</span><span class="n">DoWithTweetsForUser</span><span class="p">(</span><span class="s">&quot;robi42&quot;</span><span class="p">,</span> <span class="n">tweets</span> <span class="p">=&gt;</span> <span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">tweet</span> <span class="k">in</span> <span class="n">tweets</span><span class="p">)</span> <span class="c1">// Just for demo purpose.</span>
+</span><span class='line'>    <span class="n">Debug</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Tweet from {0}: {1}&quot;</span><span class="p">,</span> <span class="n">tweet</span><span class="p">.</span><span class="n">CreatedAt</span><span class="p">,</span> <span class="n">tweet</span><span class="p">.</span><span class="n">Text</span><span class="p">);</span>
+</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;});</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>And with .NET 4.5's new <a href="http://blogs.msdn.com/b/dotnet/archive/2012/04/03/async-in-4-5-worth-the-await.aspx">async features</a> landing in Monoland soon, related code will get even more convenient to write and handle.</p>
 
@@ -164,27 +221,43 @@ support &amp; proper JS bundling.</p>
 
 <p>Here're a couple of exemplary code snippets to whet one's appetite:</p>
 
-<p>{% codeblock main.coffee lang:coffeescript %}
-{log} = require './utilities'</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>main.coffee  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="p">{</span><span class="nx">log</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">&#39;./utilities&#39;</span><span class="o">&lt;/</span><span class="nx">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span> <span class="o">-&gt;</span>
+</span><span class='line'>  <span class="nb">window</span><span class="p">.</span><span class="nv">app = </span><span class="p">{}</span>
+</span><span class='line'>  <span class="nx">log</span> <span class="s">&#39;Hello, world!&#39;</span>
+</span><span class='line'>  <span class="k">return</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>$(document).ready ->
-  window.app = {}
-  log 'Hello, world!'
-  return
-{% endcodeblock %}</p>
-
-<p>{% codeblock Application.scala lang:scala %}
-object Application extends Controller {</p>
-
-<p>  def index = Action {</p>
-
-<pre><code>Ok(views.html.index(Messages("app.name")))
-</code></pre>
-
-<p>  }</p>
-
-<p>}
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Application.scala  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">object</span> <span class="nc">Application</span> <span class="k">extends</span> <span class="nc">Controller</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="k">def</span> <span class="n">index</span> <span class="k">=</span> <span class="nc">Action</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="nc">Ok</span><span class="o">(</span><span class="n">views</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">index</span><span class="o">(</span><span class="nc">Messages</span><span class="o">(</span><span class="s">&quot;app.name&quot;</span><span class="o">)))</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p><a href="https://github.com/robi42/play2-boilerplate">Get it on GitHub</a> while it's hot.</p>
 ]]></content>
