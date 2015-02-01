@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2015-02-01T19:07:47+01:00</updated>
+  <updated>2015-02-01T19:10:43+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -23,7 +23,7 @@
 
 <p>Built with JDK 8, Spring Boot, Elasticsearch, Jersey 2, Gradle, Yeoman, Bootstrap, AngularJS, fun, and all that jazz&#8230;</p>
 
-<p>PS: look ma, no XML! (well, almost) ;)</p>
+<p>PS: look &#8216;ma, no XML! (well, almost) ;)</p>
 ]]></content>
   </entry>
   
@@ -43,7 +43,7 @@
 <p>Plus, Java 7 brought at least some nice, welcome <a href="http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html#changes">improvements</a> in<br>
 &rarr; <code>try-with-resources</code>, exceptions <code>multicatch</code>, etc.</p>
 
-<p>Finally, modern <a href="http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection">DI</a> with Spring 3+ (or Guice) using <code>javax.inject.*</code> frees one from most needs for XML config and, after all, a build sys beating Maven for real has yet to come.</p>
+<p>Finally, modern <a href="http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection">DI</a> with Spring 4 (or Guice) using <code>javax.inject.*</code> with Java config frees one from most needs for XML config and, after all, a build sys beating Maven for real has yet to come.</p>
 
 <p>So namely, here&#8217;s a <strong>personal wish list FTW</strong>:</p>
 
