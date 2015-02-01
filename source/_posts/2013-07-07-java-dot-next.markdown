@@ -17,7 +17,7 @@ Also, [Guava](https://code.google.com/p/guava-libraries/wiki/GuavaExplained) doe
 Plus, Java 7 brought at least some nice, welcome [improvements](http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html#changes) in<br>
 &rarr; `try-with-resources`, exceptions `multicatch`, etc.
 
-Finally, modern [DI](http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection) with Spring 4 (or Guice) using `javax.inject.*` with Java config frees one from most needs for XML config and, after all, a build sys beating Maven for real has yet to come.
+Finally, modern [DI](http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection) with Spring 4 (or Guice) using `javax.inject.*` with Java config frees one from most needs for XML and, after all, a build sys beating Maven for real has yet to come.
 
 So namely, here's a **personal wish list FTW**:
 
