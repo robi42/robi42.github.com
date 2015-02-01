@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: "Proposing a CS Master's Thesis"
 date: 2013-03-05 15:01
 comments: true
