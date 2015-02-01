@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2015-02-01T19:10:43+01:00</updated>
+  <updated>2015-02-01T19:13:53+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -43,7 +43,7 @@
 <p>Plus, Java 7 brought at least some nice, welcome <a href="http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html#changes">improvements</a> in<br>
 &rarr; <code>try-with-resources</code>, exceptions <code>multicatch</code>, etc.</p>
 
-<p>Finally, modern <a href="http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection">DI</a> with Spring 4 (or Guice) using <code>javax.inject.*</code> with Java config frees one from most needs for XML config and, after all, a build sys beating Maven for real has yet to come.</p>
+<p>Finally, modern <a href="http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection">DI</a> with Spring 4 (or Guice) using <code>javax.inject.*</code> with Java config frees one from most needs for XML and, after all, a build sys beating Maven for real has yet to come.</p>
 
 <p>So namely, here's a <strong>personal wish list FTW</strong>:</p>
 
