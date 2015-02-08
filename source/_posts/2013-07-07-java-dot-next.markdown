@@ -26,8 +26,7 @@ So namely, here's a **personal wish list FTW**:
  * **Collection literals** à la Python or C#, something like this would be really sweet:
 
 {% codeblock lang:java %}
-     // Possibly, even without explicit generics declaration ;)
-     val foo = new LiteralHashMap<String, String>{"bar": "baz"};
+     val foo = #{"bar": "baz"};
      foo["bar"] = "qux";
 {% endcodeblock %}
 
