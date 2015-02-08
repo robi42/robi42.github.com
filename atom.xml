@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2015-02-01T19:18:02+01:00</updated>
+  <updated>2015-02-08T15:02:51+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -56,9 +56,7 @@
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'>     <span class="c1">// Possibly, even without explicit generics declaration ;)</span>
-</span><span class='line'>     <span class="n">val</span> <span class="n">foo</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LiteralHashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;{</span><span class="s">&quot;bar&quot;</span><span class="o">:</span> <span class="s">&quot;baz&quot;</span><span class="o">};</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'>     <span class="n">val</span> <span class="n">foo</span> <span class="o">=</span> <span class="err">#</span><span class="o">{</span><span class="s">&quot;bar&quot;</span><span class="o">:</span> <span class="s">&quot;baz&quot;</span><span class="o">};</span>
 </span><span class='line'>     <span class="n">foo</span><span class="o">[</span><span class="s">&quot;bar&quot;</span><span class="o">]</span> <span class="o">=</span> <span class="s">&quot;qux&quot;</span><span class="o">;</span>
 </span></code></pre></td></tr></table></div></figure>
 
