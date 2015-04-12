@@ -4,10 +4,10 @@
 
 url: http://robi42.github.com
 title: "Robi's Blog"
-subtitle: 'On Life, the Universe and Everything.'
+subtitle: 'On Life, the Universe and Everything – but Mainly Software Development'
 author: Robert Thurnher
 simple_search: http://google.com/search
-description: "Robi's blog on life, the universe and everything"
+description: "Robi's blog on life, the universe and everything – but mainly software development"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
