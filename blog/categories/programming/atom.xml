@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Programming | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2015-04-12T16:07:58+02:00</updated>
+  <updated>2016-07-18T22:45:25+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -60,6 +60,8 @@
 
 <p>PS: literal multiline strings, and so on and so forth, could be nice (but I can live without).<br>
 PPS: wouldn't say no to optionally named function/constructor args, though.</p>
+
+<p><strong>Update 2016:</strong> these days, <a href="https://kotlinlang.org/">Kotlin</a>'s the way to go, IMHO. :)</p>
 ]]></content>
   </entry>
   
