@@ -34,3 +34,5 @@ Pretty please. :)
 
 PS: literal multiline strings, and so on and so forth, could be nice (but I can live without).<br>
 PPS: wouldn't say no to optionally named function/constructor args, though.
+
+**Update 2016:** these days, [Kotlin](https://kotlinlang.org/)'s the way to go, IMHO. :)
