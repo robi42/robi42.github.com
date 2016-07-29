@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2016-07-23T18:30:28+02:00</updated>
+  <updated>2016-07-29T14:32:09+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -28,7 +28,7 @@
 <p>Update 2015: now with ES6 a.k.a. ES 2015 via JSPM/SystemJS...</p>
 
 <p><strong>Update 2016:</strong> these days, "isomorphic" Redux/React is all the rage on the FE side of things...<br>
-One may want to check out <a href="https://github.com/este/este">Este.js</a>.<br>
+One may want to check out <a href="https://github.com/este/este">Este.js</a> &amp; co.<br>
 On the BE, Spring Boot's playing nicely with Kotlin, and Spring MVC's favourable to JAX-RS, IMHO.</p>
 ]]></content>
   </entry>
