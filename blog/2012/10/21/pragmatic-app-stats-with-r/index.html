@@ -232,18 +232,18 @@ RMySQL + ggplot2
 </span><span class='line'>d1 <span class="o">&lt;-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> recordsPerDayQuery<span class="p">)</span>
 </span><span class='line'>
 </span><span class='line'>xlabText <span class="o">&lt;-</span> <span class="s">&#39;2012&#39;</span><span class="p">;</span> ylabText <span class="o">&lt;-</span> <span class="s">&#39;Count&#39;</span>
-</span><span class='line'>Records <span class="o">&lt;-</span> d1<span class="p">$</span>Count
+</span><span class='line'>Records <span class="o">&lt;-</span> d1<span class="o">$</span>Count
 </span><span class='line'>heading1 <span class="o">&lt;-</span> <span class="s">&#39;Records per Day&#39;</span>
 </span><span class='line'>
-</span><span class='line'>plot1 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d1<span class="p">$</span>Day<span class="p">),</span> d1<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Records<span class="p">,</span>
+</span><span class='line'>plot1 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d1<span class="o">$</span>Day<span class="p">),</span> d1<span class="o">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Records<span class="p">,</span>
 </span><span class='line'>               main<span class="o">=</span>heading1<span class="p">,</span> xlab<span class="o">=</span>xlabText<span class="p">,</span> ylab<span class="o">=</span>ylabText<span class="p">)</span>
 </span><span class='line'>
 </span><span class='line'>d2 <span class="o">&lt;-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> otherRecordsPerDayQuery<span class="p">)</span>
 </span><span class='line'>
-</span><span class='line'>Other <span class="o">&lt;-</span> d2<span class="p">$</span>Count
+</span><span class='line'>Other <span class="o">&lt;-</span> d2<span class="o">$</span>Count
 </span><span class='line'>heading2 <span class="o">&lt;-</span> <span class="s">&#39;Other Records per Day&#39;</span>
 </span><span class='line'>
-</span><span class='line'>plot2 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="p">$</span>Day<span class="p">),</span> d2<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span>
+</span><span class='line'>plot2 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="o">$</span>Day<span class="p">),</span> d2<span class="o">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span>
 </span><span class='line'>               main<span class="o">=</span>heading2<span class="p">,</span> xlab<span class="o">=</span><span class="s">&#39;2012&#39;</span><span class="p">,</span> ylab<span class="o">=</span><span class="s">&#39;Count&#39;</span><span class="p">)</span>
 </span><span class='line'><span class="c1"># ...</span>
 </span><span class='line'>
@@ -393,7 +393,7 @@ RMySQL + ggplot2
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2016 - Robert Thurnher -
+  Copyright &copy; 2017 - Robert Thurnher -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

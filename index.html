@@ -163,8 +163,7 @@ On the BE, Spring Boot&#8217;s playing nicely with Kotlin, and Spring MVC&#8217;
 <p>Plus, Java 7 brought at least some nice, welcome <a href="http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html#changes">improvements</a> in<br>
 &rarr; <code>try-with-resources</code>, exceptions <code>multicatch</code>, etc.</p>
 
-<p>Finally, modern <a href="http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection">DI</a> with Spring 4 (or Guice) using <code>javax.inject.*</code> and Java config frees one from most needs for XML and, after all, a build sys beating Maven for real has yet to come.<br>
-(Update: Gradle&#8217;s become a pretty nice alternative by now.)</p>
+<p>Finally, modern <a href="http://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection">DI</a> with Spring 4 (or Guice) using <code>javax.inject.*</code> and Java config frees one from most needs for XML and, after all, a build sys beating Maven for real has yet to come.</p>
 
 <p>So namely, here&#8217;s a <strong>personal wish list FTW</strong>:</p>
 
@@ -504,18 +503,18 @@ PPS: wouldn&#8217;t say no to optionally named function/constructor args, though
 </span><span class='line'>d1 <span class="o">&lt;-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> recordsPerDayQuery<span class="p">)</span>
 </span><span class='line'>
 </span><span class='line'>xlabText <span class="o">&lt;-</span> <span class="s">&#39;2012&#39;</span><span class="p">;</span> ylabText <span class="o">&lt;-</span> <span class="s">&#39;Count&#39;</span>
-</span><span class='line'>Records <span class="o">&lt;-</span> d1<span class="p">$</span>Count
+</span><span class='line'>Records <span class="o">&lt;-</span> d1<span class="o">$</span>Count
 </span><span class='line'>heading1 <span class="o">&lt;-</span> <span class="s">&#39;Records per Day&#39;</span>
 </span><span class='line'>
-</span><span class='line'>plot1 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d1<span class="p">$</span>Day<span class="p">),</span> d1<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Records<span class="p">,</span>
+</span><span class='line'>plot1 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d1<span class="o">$</span>Day<span class="p">),</span> d1<span class="o">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Records<span class="p">,</span>
 </span><span class='line'>               main<span class="o">=</span>heading1<span class="p">,</span> xlab<span class="o">=</span>xlabText<span class="p">,</span> ylab<span class="o">=</span>ylabText<span class="p">)</span>
 </span><span class='line'>
 </span><span class='line'>d2 <span class="o">&lt;-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> otherRecordsPerDayQuery<span class="p">)</span>
 </span><span class='line'>
-</span><span class='line'>Other <span class="o">&lt;-</span> d2<span class="p">$</span>Count
+</span><span class='line'>Other <span class="o">&lt;-</span> d2<span class="o">$</span>Count
 </span><span class='line'>heading2 <span class="o">&lt;-</span> <span class="s">&#39;Other Records per Day&#39;</span>
 </span><span class='line'>
-</span><span class='line'>plot2 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="p">$</span>Day<span class="p">),</span> d2<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span>
+</span><span class='line'>plot2 <span class="o">&lt;-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="o">$</span>Day<span class="p">),</span> d2<span class="o">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span>
 </span><span class='line'>               main<span class="o">=</span>heading2<span class="p">,</span> xlab<span class="o">=</span><span class="s">&#39;2012&#39;</span><span class="p">,</span> ylab<span class="o">=</span><span class="s">&#39;Count&#39;</span><span class="p">)</span>
 </span><span class='line'><span class="c1"># ...</span>
 </span><span class='line'>
@@ -757,7 +756,7 @@ support &amp; proper JS bundling.</p>
 <span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="p">{</span><span class="nx">log</span><span class="p">}</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">&#39;./utilities&#39;</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span> <span class="o">-&gt;</span>
+</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span> <span class="nf">-&gt;</span>
 </span><span class='line'>  <span class="nb">window</span><span class="p">.</span><span class="nv">app = </span><span class="p">{}</span>
 </span><span class='line'>  <span class="nx">log</span> <span class="s">&#39;Hello, world!&#39;</span>
 </span><span class='line'>  <span class="k">return</span>
@@ -843,7 +842,7 @@ support &amp; proper JS bundling.</p>
 
     <p>A current CV a.k.a. résumé can be provided on request.</p>
 
-    <p>In case you&#8217;d like to contact me: <br><a href="mailto:me%5Bat%5Drobi42.net">me[at]robi42.net</a></p>
+    <p>In case you&#8217;d like to contact me: <br><a href="mailto:robert@thurnher.email">robert[at]thurnher.email</a></p>
   </section>
 
   
@@ -890,7 +889,7 @@ support &amp; proper JS bundling.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2016 - Robert Thurnher -
+  Copyright &copy; 2017 - Robert Thurnher -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

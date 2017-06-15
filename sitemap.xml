@@ -2,48 +2,48 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://robi42.github.com/blog/2012/09/16/hello/</loc>
-        <lastmod>2016-07-18T23:12:29+02:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://robi42.github.com/blog/2012/09/21/play-2-boilerplate/</loc>
-        <lastmod>2015-01-04T18:28:56+01:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://robi42.github.com/blog/2012/09/24/xamarin-ftw/</loc>
-        <lastmod>2015-01-04T18:28:56+01:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://robi42.github.com/blog/2012/10/21/pragmatic-app-stats-with-r/</loc>
-        <lastmod>2015-01-04T18:28:56+01:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>
             http://robi42.github.com/blog/2012/11/21/a-visual-music-exploration-plugin-app-for-spotifys-desktop-client/
         </loc>
-        <lastmod>2015-01-04T18:28:56+01:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://robi42.github.com/blog/2012/12/07/the-humble-programmer/</loc>
-        <lastmod>2015-01-04T18:28:56+01:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://robi42.github.com/blog/2013/02/27/the-zen-of-python/</loc>
-        <lastmod>2015-01-04T18:28:56+01:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://robi42.github.com/blog/2013/07/07/java-dot-next/</loc>
-        <lastmod>2016-07-23T18:29:56+02:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://robi42.github.com/blog/2014/04/13/boot-rest/</loc>
-        <lastmod>2016-07-29T14:31:29+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://robi42.github.com/blog/archives/</loc>
-        <lastmod>2016-07-29T14:31:29+02:00</lastmod>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://robi42.github.com/</loc>
-        <lastmod>2016-07-29T14:31:29+02:00</lastmod>
+        <lastmod>2017-06-15T22:48:52+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://robi42.github.com/blog/archives/</loc>
+        <lastmod>2017-06-15T22:27:16+02:00</lastmod>
     </url>
 </urlset>

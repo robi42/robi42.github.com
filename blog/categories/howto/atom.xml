@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Howto | Robi's Blog]]></title>
   <link href="http://robi42.github.com/blog/categories/howto/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2016-07-29T14:32:09+02:00</updated>
+  <updated>2017-06-15T22:55:15+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -130,7 +130,7 @@
 <span class='line-number'>96</span>
 </pre></td><td class='code'><pre><code class='r'><span class='line'><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>!<span class="o">/</span>usr<span class="o">/</span>bin<span class="o">/</span>Rscript<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;!/</span>usr<span class="o">/</span>bin<span class="o">/</span>Rscript<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>install.packages<span class="p">(</span><span class="s">&#39;RMySQL&#39;</span><span class="p">)</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
@@ -164,32 +164,32 @@
 </span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>otherRecordsPerDayQuery <span class="o">&lt;-</span>
 </span><span class='line'>  <span class="s">&#39;select date(created_at) as Day, count(*) as Count from other_records where created_at &gt;= &quot;2012-1-1&quot; and date(created_at) &amp;lt; date(now()) group by Day&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="m">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="kc">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>Query data and plot charts.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>d1 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> recordsPerDayQuery<span class="p">)</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>xlabText <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;2012&#39;</span><span class="p">;</span> ylabText <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;Count&#39;</span>
-</span><span class='line'>Records <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> d1<span class="p">$</span>Count
+</span><span class='line'>Records <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> d1<span class="o">$</span>Count
 </span><span class='line'>heading1 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;Records per Day&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>plot1 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d1<span class="p">$</span>Day<span class="p">),</span> d1<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Records<span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>plot1 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d1<span class="o">$</span>Day<span class="p">),</span> d1<span class="o">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Records<span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>pre<span class="o">&gt;&lt;</span>code<span class="o">&gt;</span>           main<span class="o">=</span>heading1<span class="p">,</span> xlab<span class="o">=</span>xlabText<span class="p">,</span> ylab<span class="o">=</span>ylabText<span class="p">)</span>
 </span><span class='line'><span class="o">&lt;/</span>code<span class="o">&gt;&lt;/</span>pre<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>d2 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> dbGetQuery<span class="p">(</span>dbConnection<span class="p">,</span> otherRecordsPerDayQuery<span class="p">)</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>Other <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> d2<span class="p">$</span>Count
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>Other <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> d2<span class="o">$</span>Count
 </span><span class='line'>heading2 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> <span class="s">&#39;Other Records per Day&#39;</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>plot2 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="p">$</span>Day<span class="p">),</span> d2<span class="p">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>plot2 <span class="o">&amp;</span>lt<span class="p">;</span><span class="o">-</span> qplot<span class="p">(</span>as.Date<span class="p">(</span>d2<span class="o">$</span>Day<span class="p">),</span> d2<span class="o">$</span>Count<span class="p">,</span> geom<span class="o">=</span><span class="s">&#39;line&#39;</span><span class="p">,</span> color<span class="o">=</span>Other<span class="p">,</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>pre<span class="o">&gt;&lt;</span>code<span class="o">&gt;</span>           main<span class="o">=</span>heading2<span class="p">,</span> xlab<span class="o">=</span><span class="s">&#39;2012&#39;</span><span class="p">,</span> ylab<span class="o">=</span><span class="s">&#39;Count&#39;</span><span class="p">)</span>
 </span><span class='line'><span class="o">&lt;/</span>code<span class="o">&gt;&lt;/</span>pre<span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="m">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="kc">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>Write data tables to mail text file.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
@@ -207,7 +207,7 @@
 </span><span class='line'><span class="o">&lt;</span>pre<span class="o">&gt;&lt;</span>code<span class="o">&gt;</span>        row.names<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> quote<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&#39; | &#39;</span><span class="p">)</span>
 </span><span class='line'><span class="o">&lt;/</span>code<span class="o">&gt;&lt;/</span>pre<span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="m">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="kc">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span>Make PNG with plotted charts.<span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
@@ -219,7 +219,7 @@
 </span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>print<span class="p">(</span>plot1<span class="p">,</span> vp<span class="o">=</span>vplayout<span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
 </span><span class='line'>print<span class="p">(</span>plot2<span class="p">,</span> vp<span class="o">=</span>vplayout<span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="m">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span>h1<span class="o">&gt;</span><span class="kc">...</span><span class="o">&lt;/</span>h1<span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span>p<span class="o">&gt;</span>dev.off<span class="p">()</span><span class="o">&lt;/</span>p<span class="o">&gt;</span>
 </span><span class='line'>
