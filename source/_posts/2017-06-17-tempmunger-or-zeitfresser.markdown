@@ -1,0 +1,17 @@
+---
+layout: post
+title: "TempMunger || Zeitfresser"
+date: 2017-06-17 21:09
+comments: true
+categories: Studies Thesis Code
+---
+
+So, in order to revive this blog a little, I've written a [thesis](https://robi42.net/thesis)... :)
+
+Code of the prototype resides on [Github](https://github.com/robi42/temp-munger) -- [backend](https://github.com/robi42/temp-munger-backend) & [frontend](https://github.com/robi42/temp-munger-frontend).
+
+In a nutshell: [poster.pdf](https://github.com/robi42/tm/blob/master/doc/poster.pdf) (presentation slides are available as well)
+
+So long, and thanks for all the fish.
+
+{% img https://robi42.net/temp-munger.png 'Munging...' 'TempMunger' %}
