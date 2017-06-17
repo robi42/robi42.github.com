@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Thesis | Robi's Blog]]></title>
+  <link href="http://robi42.github.com/blog/categories/thesis/atom.xml" rel="self"/>
+  <link href="http://robi42.github.com/"/>
+  <updated>2017-06-17T23:02:08+02:00</updated>
+  <id>http://robi42.github.com/</id>
+  <author>
+    <name><![CDATA[Robert Thurnher]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[TempMunger || Zeitfresser]]></title>
+    <link href="http://robi42.github.com/blog/2017/06/17/tempmunger-or-zeitfresser/"/>
+    <updated>2017-06-17T21:09:00+02:00</updated>
+    <id>http://robi42.github.com/blog/2017/06/17/tempmunger-or-zeitfresser</id>
+    <content type="html"><![CDATA[<p>So, in order to revive this blog a little, I've written a <a href="https://robi42.net/thesis">thesis</a>... :)</p>
+
+<p>Code of the prototype resides on <a href="https://github.com/robi42/temp-munger">Github</a> -- <a href="https://github.com/robi42/temp-munger-backend">backend</a> &amp; <a href="https://github.com/robi42/temp-munger-frontend">frontend</a>.</p>
+
+<p>In a nutshell: <a href="https://github.com/robi42/tm/blob/master/doc/poster.pdf">poster.pdf</a> (presentation slides are available as well)</p>
+
+<p>So long, and thanks for all the fish.</p>
+
+<p><img src="https://robi42.net/temp-munger.png" title="Munging..." alt="TempMunger"></p>
+]]></content>
+  </entry>
+  
+</feed>
