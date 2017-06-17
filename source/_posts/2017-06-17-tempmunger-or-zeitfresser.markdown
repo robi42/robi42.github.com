@@ -12,6 +12,6 @@ Code of the prototype resides on [Github](https://github.com/robi42/temp-munger)
 
 In a nutshell: [poster.pdf](https://github.com/robi42/tm/blob/master/doc/poster.pdf) (presentation slides are available as well)
 
-So long, and thanks for all the fish.
-
 {% img https://robi42.net/temp-munger.png 'Munging...' 'TempMunger' %}
+
+So long, and thanks for all the fish.
