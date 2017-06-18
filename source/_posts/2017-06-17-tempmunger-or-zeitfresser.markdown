@@ -8,7 +8,7 @@ categories: Studies Thesis Code
 
 So, in order to revive this blog a little, I've written a [thesis](https://robi42.net/thesis)... :)
 
-Code of the prototype resides on [Github](https://github.com/robi42/temp-munger) -- [backend](https://github.com/robi42/temp-munger-backend) & [frontend](https://github.com/robi42/temp-munger-frontend).
+Code of the prototype resides on [Github](https://github.com/robi42/tm) -- [backend](https://github.com/robi42/tm-be) & [frontend](https://github.com/robi42/tm-fe).
 
 In a nutshell: [poster.pdf](https://github.com/robi42/tm/blob/master/doc/poster.pdf) (presentation slides are available as well)
 
