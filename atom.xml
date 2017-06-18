@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2017-06-17T23:04:25+02:00</updated>
+  <updated>2017-06-18T12:42:47+02:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -20,7 +20,7 @@
     <id>http://robi42.github.com/blog/2017/06/17/tempmunger-or-zeitfresser</id>
     <content type="html"><![CDATA[<p>So, in order to revive this blog a little, I&#8217;ve written a <a href="https://robi42.net/thesis">thesis</a>&#8230; :)</p>
 
-<p>Code of the prototype resides on <a href="https://github.com/robi42/temp-munger">Github</a> &#8211; <a href="https://github.com/robi42/temp-munger-backend">backend</a> &amp; <a href="https://github.com/robi42/temp-munger-frontend">frontend</a>.</p>
+<p>Code of the prototype resides on <a href="https://github.com/robi42/tm">Github</a> &#8211; <a href="https://github.com/robi42/tm-be">backend</a> &amp; <a href="https://github.com/robi42/tm-fe">frontend</a>.</p>
 
 <p>In a nutshell: <a href="https://github.com/robi42/tm/blob/master/doc/poster.pdf">poster.pdf</a> (presentation slides are available as well)</p>
 
