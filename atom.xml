@@ -4,7 +4,7 @@
   <title><![CDATA[Robi's Blog]]></title>
   <link href="http://robi42.github.com/atom.xml" rel="self"/>
   <link href="http://robi42.github.com/"/>
-  <updated>2020-01-05T15:36:12+01:00</updated>
+  <updated>2020-01-05T15:54:16+01:00</updated>
   <id>http://robi42.github.com/</id>
   <author>
     <name><![CDATA[Robert Thurnher]]></name>
@@ -90,6 +90,19 @@ On the BE, Spring Boot&#8217;s playing nicely with Kotlin, and Spring MVC&#8217;
 PPS: wouldn&#8217;t say no to optionally named function/constructor args, though.</p>
 
 <p><strong>Update 2016:</strong> these days, <a href="https://kotlinlang.org/">Kotlin</a>&#8217;s the way to go, IMHO. :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Proposing a CS Master's Thesis]]></title>
+    <link href="http://robi42.github.com/blog/2013/03/05/proposing-a-cs-masters-thesis/"/>
+    <updated>2013-03-05T15:01:00+01:00</updated>
+    <id>http://robi42.github.com/blog/2013/03/05/proposing-a-cs-masters-thesis</id>
+    <content type="html"><![CDATA[<p>While having some years pretty packed with interesting and challenging work (see <a href="http://dl.dropbox.com/u/194129/cv_rthurnher.pdf">CV</a>&#8230;), plus, quite something going on at the personal side of things (like marrying :) ) as well, I&#8217;m currently finally getting around to finishing my master&#8217;s of computer science for good.</p>
+
+<p>Here&#8217;s the official thesis <a href="http://dl.dropbox.com/u/194129/proposal.pdf">topic proposal</a> and the <a href="http://www.cvast.tuwien.ac.at/cvast">research centre</a> where it&#8217;s run.</p>
+
+<p>To be continued (hopefully)&#8230; ;)</p>
 ]]></content>
   </entry>
   
@@ -525,6 +538,60 @@ support &amp; proper JS bundling.</p>
 
 
 <p><a href="https://github.com/robi42/play2-boilerplate">Get it on GitHub</a> while it&#8217;s hot.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tinker]]></title>
+    <link href="http://robi42.github.com/blog/2012/09/16/tinker/"/>
+    <updated>2012-09-16T12:40:00+02:00</updated>
+    <id>http://robi42.github.com/blog/2012/09/16/tinker</id>
+    <content type="html"><![CDATA[<h1>Backend in October/November</h1>
+
+<h2>mySugr 1.*</h2>
+
+<ul>
+<li>PDF reports 1st iteration done (further refinements TBD)</li>
+<li>Major email component rework (-> Campaign Monitor API)</li>
+<li>Implemented server-side TOS handling</li>
+<li>Enterprise distribution adaptations (APNs&#8230;)</li>
+<li>Challenges:
+
+<ul>
+<li>Refinements, e.g., losing-related</li>
+<li>Enhanced rules integration testing</li>
+<li>Further i18n/l10n of texts</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>General</h2>
+
+<ul>
+<li>Improved internal automated stats</li>
+<li>Refined release process workflow</li>
+<li>Generated various voucher codes</li>
+<li>AWS systems maintenance</li>
+</ul>
+
+
+<h2>Kids App</h2>
+
+<ul>
+<li>Finished 1st iteration of prototype backend</li>
+<li>Deployed, it&#8217;s up and running on Heroku now</li>
+</ul>
+
+
+<h2>mySugr 2.0</h2>
+
+<ul>
+<li>Started with achievements backend (incl. admin web UI)</li>
+<li>First basic data model and REST service adaptations</li>
+<li>&#8230;</li>
+</ul>
+
 ]]></content>
   </entry>
   
